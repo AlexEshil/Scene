@@ -1,0 +1,34 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="1020" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101723"/>
+      <stop offset=".55" stop-color="#25384F"/>
+      <stop offset="1" stop-color="#08111A"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="280" y1="160" x2="900" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="44" fill="url(#bg)"/>
+  <circle cx="1060" cy="120" r="180" fill="#FF8A1D" fill-opacity=".22" filter="url(#blur)"/>
+  <circle cx="220" cy="720" r="220" fill="#0D66F1" fill-opacity=".20" filter="url(#blur)"/>
+  <g opacity=".15">
+    <path d="M0 620H1200" stroke="white"/>
+    <path d="M0 540H1200" stroke="white"/>
+    <path d="M180 0V900" stroke="white"/>
+    <path d="M620 0V900" stroke="white"/>
+    <path d="M980 0V900" stroke="white"/>
+  </g>
+  <rect x="120" y="162" width="960" height="570" rx="30" fill="#07111A" fill-opacity=".36" stroke="rgba(255,255,255,.12)"/>
+  <rect x="168" y="208" width="864" height="478" rx="22" fill="url(#glass)" stroke="rgba(255,255,255,.14)"/>
+  <rect x="190" y="610" width="820" height="38" rx="19" fill="#FF8A1D" fill-opacity=".18"/>
+  <rect x="224" y="422" width="154" height="188" rx="8" fill="#FF8A1D" fill-opacity="0.18"/>
+<rect x="404" y="352" width="184" height="258" rx="8" fill="#FF8A1D" fill-opacity="0.16"/>
+<rect x="622" y="398" width="220" height="212" rx="8" fill="#FF8A1D" fill-opacity="0.14"/>
+  <text x="190" y="310" fill="white" font-size="56" font-family="Oswald, Arial, sans-serif" letter-spacing="4">КЛИНИЧЕСКИЙ КОРПУС</text>
+  <text x="190" y="360" fill="rgba(255,255,255,.72)" font-size="22" font-family="Manrope, Arial, sans-serif">Архитектура объекта и медиа созданы специально для этой концепции.</text>
+</svg>

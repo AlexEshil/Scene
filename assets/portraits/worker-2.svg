@@ -1,0 +1,55 @@
+<svg width="900" height="1125" viewBox="0 0 900 1125" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="120" x2="760" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2131"/>
+      <stop offset=".58" stop-color="#122230"/>
+      <stop offset="1" stop-color="#08111A"/>
+    </linearGradient>
+    <radialGradient id="skin" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(408 395) rotate(90) scale(290 240)">
+      <stop stop-color="#F1D3BE"/>
+      <stop offset="1" stop-color="#B87862"/>
+    </radialGradient>
+    <linearGradient id="vest" x1="223" y1="580" x2="593" y2="990" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E8CFF"/>
+      <stop offset="1" stop-color="#0E55B7"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0 .045"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="34" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1125" rx="48" fill="url(#bg)"/>
+  <g opacity=".14">
+    <path d="M0 310H900" stroke="white"/>
+    <path d="M0 785H900" stroke="white"/>
+    <path d="M180 0V1125" stroke="white"/>
+    <path d="M660 0V1125" stroke="white"/>
+  </g>
+  <circle cx="720" cy="188" r="176" fill="#FF8A1D" fill-opacity=".24"/>
+  <g transform="rotate(1.2 450 550)" filter="url(#shadow)">
+    <path d="M223 905C223 765 304 650 450 650C596 650 685 765 685 905V1030H223V905Z" fill="#051019"/>
+    <path d="M223 905C223 785 314 690 450 690C586 690 685 785 685 905V1038H223V905Z" fill="url(#vest)"/>
+    <path d="M332 675H568V1038H332V675Z" fill="rgba(255,255,255,.18)"/>
+    <path d="M375 216C433 188 519 194 568 235C615 274 638 335 626 404C612 484 562 558 492 596C430 630 344 618 292 566C234 507 213 413 232 329C245 275 283 240 375 216Z" fill="url(#skin)"/>
+    <path d="M278 354C297 271 371 223 450 223C535 223 604 275 622 360C619 327 627 298 604 267C568 219 515 188 450 188C384 188 314 214 277 276C259 307 259 343 278 354Z" fill="#4A3A2A"/>
+    <path d="M242 242H558C613 242 658 287 658 342V370H242V242Z" fill="#FFF4DF"/>
+    <rect x="250" y="348" width="416" height="56" rx="28" fill="#F8DCAA"/>
+    <path d="M344 372H556V462C556 522 507 571 447 571H453C393 571 344 522 344 462V372Z" fill="url(#skin)"/>
+    <path d="M341 402C332 451 340 514 368 548" stroke="#5D3C31" stroke-opacity=".26" stroke-width="12" stroke-linecap="round"/>
+    <ellipse cx="408" cy="425" rx="58" ry="30" fill="#FFFFFF" fill-opacity=".08"/>
+    <ellipse cx="362" cy="425" rx="11" ry="8" fill="#251812"/>
+    <ellipse cx="522" cy="425" rx="11" ry="8" fill="#251812"/>
+    <path d="M385 486C421 512 477 512 513 486" stroke="#9D675B" stroke-width="10" stroke-linecap="round"/>
+    <path d="M336 610C374 646 524 648 564 610V690H336V610Z" fill="#17202A"/>
+    <path d="M243 874L309 760H351L279 1038H215L243 874Z" fill="#E7F3FF"/>
+    <path d="M657 874L591 760H549L621 1038H685L657 874Z" fill="#E7F3FF"/>
+  </g>
+  <rect width="900" height="1125" rx="48" filter="url(#grain)"/>
+  <text x="64" y="1048" fill="white" font-size="26" font-family="Manrope, Arial, sans-serif" font-weight="700" letter-spacing="2">Светлана Ермакова</text>
+</svg>
