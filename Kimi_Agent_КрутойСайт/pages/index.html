@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гостевой дом Маруся — Уютный отдых у Чёрного моря в Кудепсте</title>
+  <meta name="description" content="Семейный гостевой дом с армянским гостеприимством в Кудепсте, Сочи. Чистые уютные номера, до моря 10 минут пешком. Бронируйте прямо сейчас!">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="../shared/styles.css">
+  
+  <style>
+    /* Page-specific styles */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(61, 58, 54, 0.4) 0%,
+        rgba(61, 58, 54, 0.3) 50%,
+        rgba(61, 58, 54, 0.5) 100%
+      );
+      z-index: -1;
+    }
+    
+    .advantage-card {
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .advantage-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    
+    .review-card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .reviews-track {
+      display: flex;
+      transition: transform 500ms var(--ease-out);
+    }
+    
+    .review-slide {
+      flex: 0 0 100%;
+      padding: 0 1rem;
+      opacity: 0.4;
+      transition: opacity 500ms var(--ease-out);
+    }
+    
+    .review-slide.active {
+      opacity: 1;
+    }
+    
+    @media (min-width: 768px) {
+      .review-slide {
+        flex: 0 0 50%;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .review-slide {
+        flex: 0 0 33.333%;
+      }
+    }
+    
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--soft-sand);
+      cursor: pointer;
+      transition: all 200ms var(--ease-out);
+    }
+    
+    .carousel-dot.active {
+      background: var(--terracotta);
+      transform: scale(1.2);
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .feature-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      background: var(--soft-sand);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--olive-green);
+    }
+    
+    .cta-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body>
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Маруся</a>
+      
+      <ul class="nav-links">
+        <li><a href="rooms.html" class="nav-link">Номера</a></li>
+        <li><a href="gallery.html" class="nav-link">Галерея</a></li>
+        <li><a href="location.html" class="nav-link">Расположение</a></li>
+        <li><a href="contact.html" class="nav-link">Контакты</a></li>
+      </ul>
+      
+      <a href="contact.html#booking" class="btn btn-primary nav-cta">Забронировать</a>
+      
+      <button class="mobile-menu-btn" aria-label="Открыть меню">
+        <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Закрыть меню">
+      <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+    </button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Главная</a></li>
+      <li><a href="rooms.html" class="mobile-nav-link">Номера</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Галерея</a></li>
+      <li><a href="location.html" class="mobile-nav-link">Расположение</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Контакты</a></li>
+      <li><a href="contact.html#booking" class="mobile-nav-link" style="color: var(--terracotta);">Забронировать</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="min-height: 700px;">
+      <!-- Background Image with Ken Burns -->
+      <div class="hero-bg animate-ken-burns" style="background-image: url('https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/43757d4ed23fe7c6fe8f857265d7e9157413dd08.jpg');"></div>
+      <div class="hero-overlay"></div>
+      
+      <!-- Content -->
+      <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <p class="section-label text-white/80 animate-text-reveal" style="animation-delay: 0ms;">ГОСТЕВОЙ ДОМ В КУДЕПСТЕ</p>
+        <h1 class="text-white mb-4 animate-text-reveal" style="animation-delay: 150ms;">Маруся</h1>
+        <p class="text-xl md:text-2xl text-white/90 mb-4 font-accent italic animate-text-reveal" style="animation-delay: 300ms;">Уютный отдых у Чёрного моря</p>
+        <p class="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto animate-text-reveal" style="animation-delay: 450ms;">
+          Семейный гостевой дом с армянским гостеприимством. До моря — 10 минут пешком.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-text-reveal" style="animation-delay: 600ms;">
+          <a href="contact.html#booking" class="btn btn-primary text-lg px-8 py-4">
+            <i data-lucide="calendar" style="width: 20px; height: 20px;"></i>
+            Забронировать
+          </a>
+          <a href="rooms.html" class="btn btn-outline-white text-lg px-8 py-4">
+            <i data-lucide="bed-double" style="width: 20px; height: 20px;"></i>
+            Смотреть номера
+          </a>
+        </div>
+      </div>
+      
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce">
+        <i data-lucide="chevron-down" style="width: 32px; height: 32px;"></i>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="section" style="background: var(--cream);">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Image -->
+          <div class="reveal relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/civilisable.com/ce2f05e4670e2e9764ac18f1bf695c8948605d94.jpg" 
+                alt="Армянское гостеприимство — семейный завтрак" 
+                class="w-full aspect-[4/5] object-cover"
+                loading="lazy"
+              >
+            </div>
+            <!-- Decorative element -->
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl -z-10" style="background: var(--soft-sand);"></div>
+          </div>
+          
+          <!-- Content -->
+          <div class="reveal" style="transition-delay: 150ms;">
+            <p class="section-label">О НАС</p>
+            <h2 class="mb-6">Ваш дом вдали от дома</h2>
+            <p class="text-lg mb-8" style="color: var(--warm-gray);">
+              Гостевой дом «Маруся» — это семейное дело, которое мы ведём с любовью и заботой о каждом госте. Наш дом расположен в тихом районе Кудепста, всего в 10 минутах ходьбы от моря. Здесь вы найдёте всё для комфортного отдыха: чистые уютные номера, зелёный двор, общую кухню и мангал для вечерних посиделок.
+            </p>
+            
+            <!-- Features -->
+            <div class="space-y-4 mb-8">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i data-lucide="sparkles" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium mb-1" style="color: var(--deep-olive);">Чистота — наш приоритет</h4>
+                  <p style="color: var(--warm-gray);">Идеальная чистота в каждом номере</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium mb-1" style="color: var(--deep-olive);">Удобное расположение</h4>
+                  <p style="color: var(--warm-gray);">10 минут до моря, рядом магазины</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i data-lucide="heart" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium mb-1" style="color: var(--deep-olive);">Семейная атмосфера</h4>
+                  <p style="color: var(--warm-gray);">Тихо, спокойно, поют птички</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Quote -->
+            <blockquote class="relative pl-6 border-l-4" style="border-color: var(--terracotta);">
+              <p class="font-accent italic text-xl" style="color: var(--deep-olive);">
+                «Приезжайте как к себе домой — мы всегда рады гостям!»
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ROOMS PREVIEW SECTION
+         ============================================ -->
+    <section class="section" style="background: linear-gradient(to bottom, var(--soft-sand), var(--cream));">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <p class="section-label">НОМЕРА</p>
+          <h2 class="mb-4">Уютные номера для отдыха</h2>
+          <p style="color: var(--warm-gray);">
+            Все номера с удобствами, кондиционером и всем необходимым для комфортного проживания
+          </p>
+        </div>
+        
+        <!-- Room Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Room 1: Double Standard -->
+          <div class="card reveal" style="transition-delay: 0ms;">
+            <div class="card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/hamptonandastley.com/3787a31accdf165810d0498ff7b1aba12d8b408d.png" 
+                alt="Двухместный стандарт" 
+                loading="lazy"
+              >
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl mb-2" style="color: var(--deep-olive);">Двухместный стандарт</h3>
+              <p class="text-sm mb-4" style="color: var(--warm-gray);">Уютный номер для двоих</p>
+              
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="users" style="width: 12px; height: 12px;"></i> 2 гостя
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="wind" style="width: 12px; height: 12px;"></i> Кондиционер
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="refrigerator" style="width: 12px; height: 12px;"></i> Холодильник
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="wifi" style="width: 12px; height: 12px;"></i> Wi-Fi
+                </span>
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-semibold" style="color: var(--terracotta);">от 2 500 ₽/ночь</span>
+                <a href="rooms.html" class="btn btn-primary py-2 px-4 text-sm">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Room 2: Family -->
+          <div class="card reveal" style="transition-delay: 150ms;">
+            <div class="card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/www.kingofcotton.com/79b50d22d044c92ccd245a8eeb1236636b756329.jpg" 
+                alt="Двухкомнатный семейный" 
+                loading="lazy"
+              >
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl mb-2" style="color: var(--deep-olive);">Двухкомнатный семейный</h3>
+              <p class="text-sm mb-4" style="color: var(--warm-gray);">Просторный номер для семьи</p>
+              
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="users" style="width: 12px; height: 12px;"></i> 4 гостя
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="door-open" style="width: 12px; height: 12px;"></i> 2 комнаты
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="utensils" style="width: 12px; height: 12px;"></i> Кухня
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="wind" style="width: 12px; height: 12px;"></i> Кондиционер
+                </span>
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-semibold" style="color: var(--terracotta);">от 4 000 ₽/ночь</span>
+                <a href="rooms.html" class="btn btn-primary py-2 px-4 text-sm">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Room 3: Triple -->
+          <div class="card reveal" style="transition-delay: 300ms;">
+            <div class="card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/storage.googleapis.com/f8e0303648058722f90bd1507bf68c8e5a2767f5.jpg" 
+                alt="Трёхместный номер" 
+                loading="lazy"
+              >
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl mb-2" style="color: var(--deep-olive);">Трёхместный</h3>
+              <p class="text-sm mb-4" style="color: var(--warm-gray);">Для компании друзей</p>
+              
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="users" style="width: 12px; height: 12px;"></i> 3 гостя
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="bed" style="width: 12px; height: 12px;"></i> 3 кровати
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="refrigerator" style="width: 12px; height: 12px;"></i> Холодильник
+                </span>
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs" style="background: var(--soft-sand); color: var(--charcoal);">
+                  <i data-lucide="wifi" style="width: 12px; height: 12px;"></i> Wi-Fi
+                </span>
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-semibold" style="color: var(--terracotta);">от 3 200 ₽/ночь</span>
+                <a href="rooms.html" class="btn btn-primary py-2 px-4 text-sm">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- View All Button -->
+        <div class="text-center mt-10 reveal">
+          <a href="rooms.html" class="btn btn-secondary">
+            Смотреть все номера
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHY US SECTION
+         ============================================ -->
+    <section class="section" style="background: var(--deep-olive);">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <p class="section-label" style="color: rgba(250, 247, 242, 0.7);">ПОЧЕМУ МЫ</p>
+          <h2 class="text-white mb-4">Топ за свои деньги</h2>
+        </div>
+        
+        <!-- Advantages Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Advantage 1 -->
+          <div class="advantage-card reveal" style="transition-delay: 0ms;">
+            <div class="advantage-icon">
+              <i data-lucide="sparkles" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3 class="text-xl text-white mb-3">Идеальная чистота</h3>
+            <p style="color: rgba(250, 247, 242, 0.8);">
+              «Чистота почти идеальная» — так пишут наши гости. Мы следим за порядком каждый день.
+            </p>
+          </div>
+          
+          <!-- Advantage 2 -->
+          <div class="advantage-card reveal" style="transition-delay: 100ms;">
+            <div class="advantage-icon">
+              <i data-lucide="map-pin" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3 class="text-xl text-white mb-3">Удобное расположение</h3>
+            <p style="color: rgba(250, 247, 242, 0.8);">
+              До моря 10 минут пешком. Рядом магазин Магнит и продуктовый рынок.
+            </p>
+          </div>
+          
+          <!-- Advantage 3 -->
+          <div class="advantage-card reveal" style="transition-delay: 200ms;">
+            <div class="advantage-icon">
+              <i data-lucide="trees" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3 class="text-xl text-white mb-3">Семейная атмосфера</h3>
+            <p style="color: rgba(250, 247, 242, 0.8);">
+              Тихий уютный двор, зелёная территория, площадка для детей. Поют птички.
+            </p>
+          </div>
+          
+          <!-- Advantage 4 -->
+          <div class="advantage-card reveal" style="transition-delay: 300ms;">
+            <div class="advantage-icon">
+              <i data-lucide="check-circle-2" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3 class="text-xl text-white mb-3">Всё для комфорта</h3>
+            <p style="color: rgba(250, 247, 242, 0.8);">
+              Кухня, стиральная машина, мангал, парковка. Всё необходимое есть.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         REVIEWS SECTION
+         ============================================ -->
+    <section class="section" style="background: var(--cream);">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <p class="section-label">ОТЗЫВЫ</p>
+          <h2 class="mb-4">Что говорят наши гости</h2>
+          <div class="flex items-center justify-center gap-2">
+            <div class="star-rating">
+              <i data-lucide="star" style="width: 24px; height: 24px; fill: currentColor;"></i>
+              <i data-lucide="star" style="width: 24px; height: 24px; fill: currentColor;"></i>
+              <i data-lucide="star" style="width: 24px; height: 24px; fill: currentColor;"></i>
+              <i data-lucide="star" style="width: 24px; height: 24px; fill: currentColor;"></i>
+              <i data-lucide="star" style="width: 24px; height: 24px; fill: currentColor;"></i>
+            </div>
+            <span class="text-lg font-medium ml-2" style="color: var(--deep-olive);">4.8 из 5</span>
+          </div>
+        </div>
+        
+        <!-- Reviews Carousel -->
+        <div class="reviews-carousel relative reveal">
+          <div class="overflow-hidden">
+            <div class="reviews-track">
+              <!-- Review 1 -->
+              <div class="review-slide active">
+                <div class="review-card h-full">
+                  <div class="star-rating mb-4">
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  </div>
+                  <p class="mb-4" style="color: var(--charcoal);">
+                    «Очень приятная гостиница. Жили в двухкомнатном номере на первом этаже. <strong>Чистота почти идеальная.</strong> Полное соответствие фотографиям. Удобные кровати, за окном сад и всё время поют птички.»
+                  </p>
+                  <p class="font-medium" style="color: var(--deep-olive);">Nata Marchenko</p>
+                </div>
+              </div>
+              
+              <!-- Review 2 -->
+              <div class="review-slide">
+                <div class="review-card h-full">
+                  <div class="star-rating mb-4">
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  </div>
+                  <p class="mb-4" style="color: var(--charcoal);">
+                    «Прекрасный отель! Останавливались с мужем в середине июня. Отдельная благодарность за чистоту. Постельное бельё, полотенца, всё в наилучшем виде.»
+                  </p>
+                  <p class="font-medium" style="color: var(--deep-olive);">Алёна Тихонова</p>
+                </div>
+              </div>
+              
+              <!-- Review 3 -->
+              <div class="review-slide">
+                <div class="review-card h-full">
+                  <div class="star-rating mb-4">
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  </div>
+                  <p class="mb-4" style="color: var(--charcoal);">
+                    «ПРЕКРАСНОЕ МЕСТО ДЛЯ ОТДЫХА И ХОРОШИЕ ХОЗЯЕВА КОТОРЫЕ ВСЕГДА РАДЫ ГОСТЯМ! ВСТРЕТЯТ РАЗМЕСТЯТ И НАКОРМЯТ! <strong>ТОП ЗА СВОИ ДЕНЬГИ!</strong> 5 ИЗ 5!»
+                  </p>
+                  <p class="font-medium" style="color: var(--deep-olive);">Денис Павлов</p>
+                </div>
+              </div>
+              
+              <!-- Review 4 -->
+              <div class="review-slide">
+                <div class="review-card h-full">
+                  <div class="star-rating mb-4">
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  </div>
+                  <p class="mb-4" style="color: var(--charcoal);">
+                    «Мы в восторге от отдыха в этом Гостевом доме!»
+                  </p>
+                  <p class="font-medium" style="color: var(--deep-olive);">Ирина</p>
+                </div>
+              </div>
+              
+              <!-- Review 5 -->
+              <div class="review-slide">
+                <div class="review-card h-full">
+                  <div class="star-rating mb-4">
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                    <i data-lucide="star" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                  </div>
+                  <p class="mb-4" style="color: var(--charcoal);">
+                    «Очень классное местечко, советую посетить данный мини отель, частенько комфортно, обязательно ещё раз посетим вас, спасибо за чистоту комфорт!»
+                  </p>
+                  <p class="font-medium" style="color: var(--deep-olive);">ВИКТОР КАЛИННИКОВ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <button class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow" aria-label="Предыдущий отзыв">
+            <i data-lucide="chevron-left" style="width: 24px; height: 24px; color: var(--charcoal);"></i>
+          </button>
+          <button class="carousel-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow" aria-label="Следующий отзыв">
+            <i data-lucide="chevron-right" style="width: 24px; height: 24px; color: var(--charcoal);"></i>
+          </button>
+          
+          <!-- Dots -->
+          <div class="flex justify-center gap-2 mt-8">
+            <button class="carousel-dot active" aria-label="Отзыв 1"></button>
+            <button class="carousel-dot" aria-label="Отзыв 2"></button>
+            <button class="carousel-dot" aria-label="Отзыв 3"></button>
+            <button class="carousel-dot" aria-label="Отзыв 4"></button>
+            <button class="carousel-dot" aria-label="Отзыв 5"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT CTA SECTION
+         ============================================ -->
+    <section class="section cta-pattern" style="background-color: var(--terracotta);">
+      <div class="container">
+        <div class="text-center max-w-2xl mx-auto reveal">
+          <h2 class="text-white mb-4">Готовы к отдыху?</h2>
+          <p class="text-lg mb-8" style="color: rgba(255, 255, 255, 0.9);">
+            Забронируйте номер прямо сейчас или свяжитесь с нами
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <a href="contact.html#booking" class="btn btn-white text-lg px-8 py-4">
+              <i data-lucide="calendar" style="width: 20px; height: 20px;"></i>
+              Забронировать номер
+            </a>
+          </div>
+          
+          <!-- Contact Options -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/79990000000" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors">
+              <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+              WhatsApp
+            </a>
+            <a href="https://t.me/marusyaguesthouse" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors">
+              <i data-lucide="send" style="width: 20px; height: 20px;"></i>
+              Telegram
+            </a>
+            <a href="tel:+79990000000" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-colors">
+              <i data-lucide="phone" style="width: 20px; height: 20px;"></i>
+              Позвонить
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Logo & Description -->
+        <div>
+          <div class="footer-logo">Маруся</div>
+          <p class="footer-description">
+            Семейный гостевой дом в Кудепсте. Уют, чистота и армянское гостеприимство.
+          </p>
+          <div class="footer-social">
+            <a href="https://wa.me/79990000000" target="_blank" rel="noopener" class="footer-social-link" aria-label="WhatsApp">
+              <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="https://t.me/marusyaguesthouse" target="_blank" rel="noopener" class="footer-social-link" aria-label="Telegram">
+              <i data-lucide="send" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="https://vk.com/marusyaguesthouse" target="_blank" rel="noopener" class="footer-social-link" aria-label="VKontakte">
+              <i data-lucide="users" style="width: 20px; height: 20px;"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div>
+          <h4 class="footer-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="rooms.html" class="footer-link">Номера</a></li>
+            <li><a href="gallery.html" class="footer-link">Галерея</a></li>
+            <li><a href="location.html" class="footer-link">Расположение</a></li>
+            <li><a href="contact.html" class="footer-link">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h4 class="footer-title">Контакты</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" style="width: 18px; height: 18px;"></i>
+            <a href="tel:+79990000000" style="color: inherit; text-decoration: none;">+7 (999) 000-00-00</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+            <a href="mailto:info@marusya.ru" style="color: inherit; text-decoration: none;">info@marusya.ru</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" style="width: 18px; height: 18px;"></i>
+            <span>Кудепста, Сочи, Россия</span>
+          </div>
+        </div>
+        
+        <!-- Working Hours -->
+        <div>
+          <h4 class="footer-title">Режим работы</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="clock" style="width: 18px; height: 18px;"></i>
+            <span>Круглосуточно</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="calendar-check" style="width: 18px; height: 18px;"></i>
+            <span>Заезд: с 14:00</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="calendar-x" style="width: 18px; height: 18px;"></i>
+            <span>Выезд: до 12:00</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2024 Гостевой дом Маруся. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Scripts -->
+  <script src="../shared/scripts.js"></script>
+  
+  <!-- Page-specific scripts -->
+  <script>
+    // Re-initialize Lucide icons after page load
+    document.addEventListener('DOMContentLoaded', function() {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

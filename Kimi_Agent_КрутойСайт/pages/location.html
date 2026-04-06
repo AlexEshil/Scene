@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расположение | Маруся - Гостевой дом в Кудепсте</title>
+  <meta name="description" content="Как найти гостевой дом Маруся в Кудепсте. Адрес, схема проезда, ближайшие достопримечательности и пляжи.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="../shared/styles.css">
+  
+  <style>
+    /* Page-specific styles */
+    .page-hero {
+      background: linear-gradient(135deg, var(--color-deep-olive) 0%, var(--color-olive) 100%);
+      padding: var(--space-8) 0 var(--space-7);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></svg>');
+      background-size: 80px 80px;
+      opacity: 0.5;
+    }
+    
+    .page-hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Map container */
+    .map-container {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    /* Info card */
+    .info-card {
+      background: var(--color-warm-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-md);
+      transition: all var(--duration-normal) var(--ease-out);
+    }
+    
+    .info-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .info-card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-lg);
+      background: var(--color-olive);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-cream);
+      margin-bottom: var(--space-3);
+    }
+    
+    /* Direction card */
+    .direction-card {
+      background: var(--color-warm-white);
+      border-radius: var(--radius-xl);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--color-terracotta);
+      transition: all var(--duration-normal) var(--ease-out);
+    }
+    
+    .direction-card:hover {
+      transform: translateX(8px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .direction-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: rgba(199, 91, 58, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-terracotta);
+      flex-shrink: 0;
+    }
+    
+    /* Attraction card */
+    .attraction-card {
+      background: var(--color-warm-white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all var(--duration-normal) var(--ease-out);
+    }
+    
+    .attraction-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .attraction-card-image {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+    
+    .attraction-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-out);
+    }
+    
+    .attraction-card:hover .attraction-card-image img {
+      transform: scale(1.05);
+    }
+    
+    .attraction-card-content {
+      padding: var(--space-4);
+    }
+    
+    .walk-time-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-1);
+      padding: 6px 12px;
+      background: rgba(107, 123, 79, 0.1);
+      color: var(--color-olive);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 500;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--color-terracotta) 0%, #A84A2E 100%);
+      padding: var(--space-8) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+      animation: rotate 30s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+    
+    .breadcrumb a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    
+    .breadcrumb-separator {
+      opacity: 0.5;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .page-hero {
+        padding: var(--space-7) 0 var(--space-6);
+      }
+      
+      .map-container {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-cream">
+  <!-- Navigation -->
+  <header class="nav-header is-transparent" id="main-nav">
+    <div class="container h-full">
+      <nav class="flex items-center justify-between h-full">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2" aria-label="Гостевой дом Маруся - на главную">
+          <span class="font-heading text-2xl font-semibold text-deep-olive" style="font-family: var(--font-heading);">Маруся</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li>
+            <a href="rooms.html" class="text-charcoal font-medium link-underline">Номера</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="text-charcoal font-medium link-underline">Галерея</a>
+          </li>
+          <li>
+            <a href="location.html" class="text-charcoal font-medium link-underline is-active">Расположение</a>
+          </li>
+          <li>
+            <a href="contact.html" class="text-charcoal font-medium link-underline">Контакты</a>
+          </li>
+        </ul>
+
+        <!-- CTA Button (Desktop) -->
+        <a href="contact.html#booking" class="hidden md:inline-flex btn btn-primary">
+          <span>Забронировать</span>
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button 
+          type="button" 
+          class="md:hidden p-2 text-charcoal" 
+          id="mobile-menu-toggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <i data-lucide="menu" class="w-6 h-6" id="menu-icon-open"></i>
+          <i data-lucide="x" class="w-6 h-6 hidden" id="menu-icon-close"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+    <div class="flex flex-col h-full">
+      <!-- Mobile Menu Header -->
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-heading text-2xl font-semibold text-deep-olive" style="font-family: var(--font-heading);">Маруся</span>
+        <button 
+          type="button" 
+          class="p-2 text-charcoal" 
+          id="mobile-menu-close"
+          aria-label="Закрыть меню"
+        >
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Links -->
+      <nav class="flex-1">
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a href="rooms.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+              Номера
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+              Галерея
+            </a>
+          </li>
+          <li>
+            <a href="location.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand text-terracotta">
+              Расположение
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile CTA -->
+      <div class="mt-auto pt-6">
+        <a href="contact.html#booking" class="btn btn-primary w-full justify-center">
+          <span>Забронировать</span>
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+        </a>
+
+        <!-- Mobile Contact Info -->
+        <div class="mt-6 flex items-center justify-center gap-4">
+          <a href="https://wa.me/79990000000" class="p-3 rounded-full bg-olive/10 text-olive hover:bg-olive/20 transition-colors" aria-label="WhatsApp">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </a>
+          <a href="https://t.me/username" class="p-3 rounded-full bg-olive/10 text-olive hover:bg-olive/20 transition-colors" aria-label="Telegram">
+            <i data-lucide="send" class="w-5 h-5"></i>
+          </a>
+          <a href="tel:+79990000000" class="p-3 rounded-full bg-olive/10 text-olive hover:bg-olive/20 transition-colors" aria-label="Позвонить">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer for fixed header -->
+  <div class="h-20 md:h-20" id="nav-spacer"></div>
+
+  <main id="main-content">
+    <!-- Page Header / Hero -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb mb-6 scroll-animate" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span class="breadcrumb-separator">
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </span>
+          <span>Расположение</span>
+        </nav>
+        
+        <!-- Page Title -->
+        <div class="max-w-3xl scroll-animate delay-100">
+          <h1 class="heading-hero text-cream mb-4">Как нас найти</h1>
+          <p class="text-body-large text-cream/90 max-w-2xl">
+            Гостевой дом «Маруся» расположен в тихом районе Кудепста, всего в 10 минутах ходьбы от Чёрного моря. Легко добраться из аэропорта, с вокзала или на автомобиле.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Address Section -->
+    <section class="section section-cream">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Map -->
+          <div class="lg:col-span-2 scroll-animate">
+            <div class="map-container h-[400px] lg:h-[500px]">
+              <iframe 
+                src="https://yandex.ru/map-widget/v1/?ll=39.450000%2C43.416667&z=15&pt=39.450000%2C43.416667%2Cpm2rdl&text=Кудепста%20Сочи" 
+                allowfullscreen="true"
+                loading="lazy"
+                title="Карта расположения гостевого дома Маруся в Кудепсте"
+              ></iframe>
+            </div>
+          </div>
+          
+          <!-- Address Card -->
+          <div class="scroll-animate delay-100">
+            <div class="info-card h-full">
+              <div class="info-card-icon">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <h2 class="heading-3 text-deep-olive mb-4">Наш адрес</h2>
+              
+              <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                  <i data-lucide="home" class="w-5 h-5 mt-0.5 text-olive flex-shrink-0"></i>
+                  <div>
+                    <p class="text-charcoal font-medium">Гостевой дом «Маруся»</p>
+                    <p class="text-warm-gray text-body-small">
+                      Россия, Краснодарский край,<br>
+                      г. Сочи, Кудепста,<br>
+                      Александровский район
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <i data-lucide="phone" class="w-5 h-5 mt-0.5 text-olive flex-shrink-0"></i>
+                  <div>
+                    <p class="text-warm-gray text-body-small">Телефон</p>
+                    <a href="tel:+79990000000" class="text-charcoal font-medium hover:text-terracotta transition-colors">
+                      +7 (999) 000-00-00
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <i data-lucide="mail" class="w-5 h-5 mt-0.5 text-olive flex-shrink-0"></i>
+                  <div>
+                    <p class="text-warm-gray text-body-small">Email</p>
+                    <a href="mailto:info@marusya.ru" class="text-charcoal font-medium hover:text-terracotta transition-colors">
+                      info@marusya.ru
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <i data-lucide="clock" class="w-5 h-5 mt-0.5 text-olive flex-shrink-0"></i>
+                  <div>
+                    <p class="text-warm-gray text-body-small">Режим работы</p>
+                    <p class="text-charcoal font-medium">Круглосуточно</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-6 pt-6 border-t border-soft-sand">
+                <p class="text-warm-gray text-body-small mb-3">Быстрая связь:</p>
+                <div class="flex items-center gap-3">
+                  <a 
+                    href="https://wa.me/79990000000" 
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-cream transition-colors"
+                    aria-label="WhatsApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                  </a>
+                  <a 
+                    href="https://t.me/username" 
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-olive/10 text-olive hover:bg-olive hover:text-cream transition-colors"
+                    aria-label="Telegram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Get There Section -->
+    <section class="section section-soft-sand">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 scroll-animate">
+          <span class="text-caption text-olive mb-3 block">СХЕМА ПРОЕЗДА</span>
+          <h2 class="heading-1 text-deep-olive mb-4">Как добраться</h2>
+          <p class="text-body text-warm-gray">
+            Выберите удобный способ добраться до гостевого дома «Маруся»
+          </p>
+        </div>
+        
+        <!-- Directions Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-stagger="150">
+          <!-- From Airport -->
+          <div class="direction-card scroll-animate">
+            <div class="flex items-start gap-4">
+              <div class="direction-icon">
+                <i data-lucide="plane" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="heading-4 text-deep-olive mb-2">Из аэропорта</h3>
+                <p class="text-warm-gray text-body-small mb-3">
+                  Международный аэропорт Сочи (Адлер)
+                </p>
+                <ul class="space-y-2 text-body-small text-charcoal">
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>На такси: ~25-30 минут</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Автобус № 51, 125 до ост. «Кудепста»</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Электричка до ст. Кудепста</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- From Train Station -->
+          <div class="direction-card scroll-animate">
+            <div class="flex items-start gap-4">
+              <div class="direction-icon">
+                <i data-lucide="train" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="heading-4 text-deep-olive mb-2">С вокзала</h3>
+                <p class="text-warm-gray text-body-small mb-3">
+                  Ж/д вокзал Сочи или Адлер
+                </p>
+                <ul class="space-y-2 text-body-small text-charcoal">
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Электричка до ст. Кудепста (10 мин)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Автобус № 125, 149</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>На такси: ~15-20 минут</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- By Car -->
+          <div class="direction-card scroll-animate">
+            <div class="flex items-start gap-4">
+              <div class="direction-icon">
+                <i data-lucide="car" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="heading-4 text-deep-olive mb-2">На автомобиле</h3>
+                <p class="text-warm-gray text-body-small mb-3">
+                  Трасса М-27 «Джубга — Сочи»
+                </p>
+                <ul class="space-y-2 text-body-small text-charcoal">
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Съезд на Кудепста</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Бесплатная парковка на территории</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 mt-0.5 text-olive flex-shrink-0"></i>
+                    <span>Навигатор: «ул. Лесная, Кудепста»</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Attractions Section -->
+    <section class="section section-cream">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 scroll-animate">
+          <span class="text-caption text-olive mb-3 block">РЯДОМ С НАМИ</span>
+          <h2 class="heading-1 text-deep-olive mb-4">Что рядом</h2>
+          <p class="text-body text-warm-gray">
+            Всё необходимое для комфортного отдыха в шаговой доступности
+          </p>
+        </div>
+        
+        <!-- Attractions Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-stagger="100">
+          <!-- Beach -->
+          <div class="attraction-card scroll-animate">
+            <div class="attraction-card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/l450v.alamy.com/fbc842c5ed78b519d8a5e599f0e4b70e9bf695af.jpg" 
+                alt="Пляж Кудепста - Чёрное море" 
+                loading="lazy"
+              >
+            </div>
+            <div class="attraction-card-content">
+              <div class="walk-time-badge mb-3">
+                <i data-lucide="footprints" class="w-4 h-4"></i>
+                <span>10 минут пешком</span>
+              </div>
+              <h3 class="heading-4 text-deep-olive mb-2">Пляж Кудепста</h3>
+              <p class="text-warm-gray text-body-small">
+                Чистый галечный пляж Чёрного моря с развитой инфраструктурой
+              </p>
+            </div>
+          </div>
+          
+          <!-- Market -->
+          <div class="attraction-card scroll-animate">
+            <div class="attraction-card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/893721c0a0757fdebf3d292df99a0a8298a9721f.jpg" 
+                alt="Продуктовый рынок с фруктами и овощами" 
+                loading="lazy"
+              >
+            </div>
+            <div class="attraction-card-content">
+              <div class="walk-time-badge mb-3">
+                <i data-lucide="footprints" class="w-4 h-4"></i>
+                <span>7 минут пешком</span>
+              </div>
+              <h3 class="heading-4 text-deep-olive mb-2">Продуктовый рынок</h3>
+              <p class="text-warm-gray text-body-small">
+                Свежие фрукты, овощи, мясо и рыба от местных фермеров
+              </p>
+            </div>
+          </div>
+          
+          <!-- Store -->
+          <div class="attraction-card scroll-animate">
+            <div class="attraction-card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/d44ff01696019140d92dd56133688417b00db2e4.jpg" 
+                alt="Супермаркет Магнит" 
+                loading="lazy"
+              >
+            </div>
+            <div class="attraction-card-content">
+              <div class="walk-time-badge mb-3">
+                <i data-lucide="footprints" class="w-4 h-4"></i>
+                <span>5 минут пешком</span>
+              </div>
+              <h3 class="heading-4 text-deep-olive mb-2">Супермаркет «Магнит»</h3>
+              <p class="text-warm-gray text-body-small">
+                Круглосуточный магазин с полным ассортиментом товаров
+              </p>
+            </div>
+          </div>
+          
+          <!-- Sea Promenade -->
+          <div class="attraction-card scroll-animate">
+            <div class="attraction-card-image">
+              <img 
+                src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/6e155f6af4bd05a09043fe24959d541c1c949e0f.jpg" 
+                alt="Сочинская набережная" 
+                loading="lazy"
+              >
+            </div>
+            <div class="attraction-card-content">
+              <div class="walk-time-badge mb-3">
+                <i data-lucide="footprints" class="w-4 h-4"></i>
+                <span>10 минут пешком</span>
+              </div>
+              <h3 class="heading-4 text-deep-olive mb-2">Набережная</h3>
+              <p class="text-warm-gray text-body-small">
+                Прогулочная зона вдоль моря с кафе и аттракционами
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container cta-content">
+        <div class="text-center max-w-2xl mx-auto scroll-animate">
+          <h2 class="heading-1 text-cream mb-4">Построить маршрут</h2>
+          <p class="text-body-large text-cream/90 mb-8">
+            Откройте навигатор и постройте маршрут до гостевого дома «Маруся» прямо сейчас
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a 
+              href="https://yandex.ru/maps/?rtext=~43.416667,39.450000&rtt=auto" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn bg-white text-terracotta hover:bg-cream w-full sm:w-auto justify-center"
+            >
+              <i data-lucide="navigation" class="w-5 h-5"></i>
+              <span>Яндекс.Карты</span>
+            </a>
+            <a 
+              href="https://www.google.com/maps/dir/?api=1&destination=43.416667,39.450000" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost w-full sm:w-auto justify-center"
+            >
+              <i data-lucide="map" class="w-5 h-5"></i>
+              <span>Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Main Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        
+        <!-- Column 1: Logo & Description -->
+        <div class="lg:col-span-1">
+          <a href="index.html" class="inline-block mb-4">
+            <span class="font-heading text-3xl font-semibold text-cream" style="font-family: var(--font-heading);">Маруся</span>
+          </a>
+          <p class="text-cream/80 text-body-small leading-relaxed mb-6">
+            Семейный гостевой дом в Кудепсте. Уют, чистота и армянское гостеприимство.
+          </p>
+          <!-- Social Links -->
+          <div class="flex items-center gap-3">
+            <a 
+              href="https://wa.me/79990000000" 
+              class="flex items-center justify-center w-10 h-10 rounded-full bg-cream/10 text-cream hover:bg-cream/20 transition-colors"
+              aria-label="Написать в WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
+            <a 
+              href="https://t.me/username" 
+              class="flex items-center justify-center w-10 h-10 rounded-full bg-cream/10 text-cream hover:bg-cream/20 transition-colors"
+              aria-label="Написать в Telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-lucide="send" class="w-5 h-5"></i>
+            </a>
+            <a 
+              href="https://vk.com/username" 
+              class="flex items-center justify-center w-10 h-10 rounded-full bg-cream/10 text-cream hover:bg-cream/20 transition-colors"
+              aria-label="Группа ВКонтакте"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <h4 class="text-cream font-medium text-lg mb-4">Навигация</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="index.html" class="text-cream/80 hover:text-cream transition-colors text-body-small">Главная</a>
+            </li>
+            <li>
+              <a href="rooms.html" class="text-cream/80 hover:text-cream transition-colors text-body-small">Номера</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="text-cream/80 hover:text-cream transition-colors text-body-small">Галерея</a>
+            </li>
+            <li>
+              <a href="location.html" class="text-cream/80 hover:text-cream transition-colors text-body-small">Расположение</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-cream/80 hover:text-cream transition-colors text-body-small">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h4 class="text-cream font-medium text-lg mb-4">Контакты</h4>
+          <ul class="space-y-4">
+            <li>
+              <a href="tel:+79990000000" class="flex items-start gap-3 text-cream/80 hover:text-cream transition-colors group">
+                <i data-lucide="phone" class="w-5 h-5 mt-0.5 flex-shrink-0 text-olive"></i>
+                <span class="text-body-small">+7 (999) 000-00-00</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@marusya.ru" class="flex items-start gap-3 text-cream/80 hover:text-cream transition-colors group">
+                <i data-lucide="mail" class="w-5 h-5 mt-0.5 flex-shrink-0 text-olive"></i>
+                <span class="text-body-small">info@marusya.ru</span>
+              </a>
+            </li>
+            <li>
+              <div class="flex items-start gap-3 text-cream/80">
+                <i data-lucide="map-pin" class="w-5 h-5 mt-0.5 flex-shrink-0 text-olive"></i>
+                <span class="text-body-small">
+                  Россия, Краснодарский край,<br>
+                  г. Сочи, Кудепста
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Quick Booking -->
+        <div>
+          <h4 class="text-cream font-medium text-lg mb-4">Быстрая бронь</h4>
+          <p class="text-cream/80 text-body-small mb-4">
+            Свяжитесь с нами удобным способом — ответим в течение 15 минут.
+          </p>
+          <div class="space-y-3">
+            <a 
+              href="https://wa.me/79990000000" 
+              class="flex items-center justify-center gap-2 w-full py-3 px-4 bg-olive text-cream rounded-lg hover:bg-olive/90 transition-colors text-body-small font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Написать в WhatsApp</span>
+            </a>
+            <a 
+              href="tel:+79990000000" 
+              class="flex items-center justify-center gap-2 w-full py-3 px-4 border border-cream/30 text-cream rounded-lg hover:bg-cream/10 transition-colors text-body-small font-medium"
+            >
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              <span>Позвонить</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-cream/60 text-xs">
+            © 2024 Гостевой дом Маруся. Все права защищены.
+          </p>
+          <div class="flex items-center gap-6">
+            <a href="privacy.html" class="text-cream/60 hover:text-cream/80 transition-colors text-xs">
+              Политика конфиденциальности
+            </a>
+            <a href="terms.html" class="text-cream/60 hover:text-cream/80 transition-colors text-xs">
+              Условия использования
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Scripts -->
+  <script src="../shared/scripts.js"></script>
+  
+  <!-- Page-specific scripts -->
+  <script>
+    // Initialize page-specific functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add active state to current nav link
+      const locationLinks = document.querySelectorAll('a[href="location.html"]');
+      locationLinks.forEach(function(link) {
+        link.classList.add('is-active');
+      });
+    });
+  </script>
+</body>
+</html>

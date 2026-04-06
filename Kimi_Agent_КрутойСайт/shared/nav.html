@@ -1,0 +1,117 @@
+<!-- Маруся Guest House - Navigation Component -->
+<header class="nav-header is-transparent" id="main-nav">
+  <div class="container h-full">
+    <nav class="flex items-center justify-between h-full">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2" aria-label="Гостевой дом Маруся - на главную">
+        <span class="font-heading text-2xl font-semibold text-deep-olive" style="font-family: var(--font-heading);">Маруся</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center gap-8">
+        <li>
+          <a href="rooms.html" class="text-charcoal font-medium link-underline">Номера</a>
+        </li>
+        <li>
+          <a href="gallery.html" class="text-charcoal font-medium link-underline">Галерея</a>
+        </li>
+        <li>
+          <a href="location.html" class="text-charcoal font-medium link-underline">Расположение</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-charcoal font-medium link-underline">Контакты</a>
+        </li>
+      </ul>
+
+      <!-- CTA Button (Desktop) -->
+      <a href="contact.html#booking" class="hidden md:inline-flex btn btn-primary">
+        <span>Забронировать</span>
+        <i data-lucide="calendar" class="w-4 h-4"></i>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        type="button" 
+        class="md:hidden p-2 text-charcoal" 
+        id="mobile-menu-toggle"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <i data-lucide="menu" class="w-6 h-6" id="menu-icon-open"></i>
+        <i data-lucide="x" class="w-6 h-6 hidden" id="menu-icon-close"></i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+  <div class="flex flex-col h-full">
+    <!-- Mobile Menu Header -->
+    <div class="flex items-center justify-between mb-8">
+      <span class="font-heading text-2xl font-semibold text-deep-olive" style="font-family: var(--font-heading);">Маруся</span>
+      <button 
+        type="button" 
+        class="p-2 text-charcoal" 
+        id="mobile-menu-close"
+        aria-label="Закрыть меню"
+      >
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Links -->
+    <nav class="flex-1">
+      <ul class="flex flex-col gap-4">
+        <li>
+          <a href="rooms.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+            Номера
+          </a>
+        </li>
+        <li>
+          <a href="gallery.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+            Галерея
+          </a>
+        </li>
+        <li>
+          <a href="location.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+            Расположение
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="block py-3 text-xl font-medium text-charcoal border-b border-soft-sand">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile CTA -->
+    <div class="mt-auto pt-6">
+      <a href="contact.html#booking" class="btn btn-primary w-full justify-center">
+        <span>Забронировать</span>
+        <i data-lucide="calendar" class="w-4 h-4"></i>
+      </a>
+
+      <!-- Mobile Contact Info -->
+      <div class="mt-6 flex items-center justify-center gap-4">
+        <a href="https://wa.me/79990000000" class="p-3 rounded-full bg-olive/10 text-olive hover:bg-olive/20 transition-colors" aria-label="WhatsApp">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+        </a>
+        <a href="https://t.me/username" class="p-3 rounded-full bg-olive/10 text-olive hover:bg-olive/20 transition-colors" aria-label="Telegram">
+          <i data-lucide="send" class="w-5 h-5"></i>
+        </a>
+        <a href="tel:+79990000000" class="p-3 rounded-full bg-olive/10 text-olive hover:bg-olive/20 transition-colors" aria-label="Позвонить">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Spacer for fixed header -->
+<div class="h-20 md:h-20" id="nav-spacer"></div>
