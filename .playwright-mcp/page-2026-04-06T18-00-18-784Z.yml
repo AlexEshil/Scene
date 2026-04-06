@@ -1,0 +1,1249 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e6]:
+          - text: Мы используем
+          - link "куки" [ref=e7] [cursor=pointer]:
+            - /url: /legal/site/privacy-policy/
+          - text: для аналитики и правильной работы сайта
+        - button "Хорошо" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: Хорошо
+      - generic [ref=e12]:
+        - link [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e14]:
+          - link [ref=e15] [cursor=pointer]:
+            - /url: /sp/favorite/?ref=header-fav-widget-link
+            - img [ref=e18]
+          - button [ref=e22] [cursor=pointer]:
+            - img [ref=e25]
+          - button [ref=e30] [cursor=pointer]:
+            - img [ref=e33]
+          - button [ref=e44] [cursor=pointer]:
+            - img [ref=e47]
+          - button [ref=e51] [cursor=pointer]:
+            - img [ref=e54]
+          - button "Войти" [ref=e60] [cursor=pointer]:
+            - generic [ref=e61]:
+              - img [ref=e63]
+              - generic [ref=e67]: Войти
+          - button [ref=e70] [cursor=pointer]:
+            - img [ref=e73]
+    - generic [ref=e114]:
+      - link "Все варианты в Сочи" [ref=e115] [cursor=pointer]:
+        - /url: /hotel/russia/sochi/
+      - button "Новый поиск" [ref=e116] [cursor=pointer]
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - heading "Гостевой дом Маруся на Александровском" [level=1] [ref=e123]: Гостевой дом Маруся на Александровском
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: Александровский переулок, д.8, Сочи
+                - button "• Показать на карте" [ref=e130] [cursor=pointer]
+              - generic [ref=e132]: 17 кмот центра
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: от 4 044 ₽
+            - generic [ref=e136]:
+              - button "favorite-control" [ref=e137] [cursor=pointer]:
+                - img [ref=e140]
+              - button "Посмотреть цены" [ref=e143] [cursor=pointer]:
+                - generic [ref=e144]: Посмотреть цены
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - button "Гостевой дом Маруся на Александровском" [ref=e148] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e150]
+            - button "Гостевой дом Маруся на Александровском" [ref=e151] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e153]
+            - button "Гостевой дом Маруся на Александровском" [ref=e154] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e156]
+            - button "Гостевой дом Маруся на Александровском" [ref=e157] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e159]
+            - button "Гостевой дом Маруся на Александровском" [ref=e160] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e162]
+            - button "Гостевой дом Маруся на Александровском" [ref=e163] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e165]
+            - button "Гостевой дом Маруся на Александровском +15 фото" [active] [ref=e166] [cursor=pointer]:
+              - img "Гостевой дом Маруся на Александровском" [ref=e168]
+              - generic [ref=e170]: +15 фото
+          - generic [ref=e1268]:
+            - generic [ref=e1269]:
+              - generic [ref=e1270]: Гостевой дом Маруся на Александровском
+              - button "close gallery" [ref=e1271] [cursor=pointer]:
+                - img [ref=e1272]
+            - generic [ref=e1274]:
+              - generic [ref=e1275]:
+                - generic [ref=e1276]:
+                  - button "Фотографии отеля • 22" [ref=e1277] [cursor=pointer]
+                  - button "Фотографии гостей • 1" [ref=e1278] [cursor=pointer]
+                - generic [ref=e1281]:
+                  - generic [ref=e1283]: 1 / 22
+                  - button "Гостевой дом Маруся на Александровском" [ref=e1284]:
+                    - generic [ref=e1286]:
+                      - img [ref=e1289]
+                      - img [ref=e1292]
+                      - img [ref=e1295]
+                      - img "Гостевой дом Маруся на Александровском" [ref=e1298]
+                      - img [ref=e1301]
+                      - img [ref=e1304]
+                    - generic [ref=e1305]:
+                      - button [ref=e1306] [cursor=pointer]:
+                        - img [ref=e1307]
+                      - button [ref=e1309] [cursor=pointer]:
+                        - img [ref=e1310]
+                  - list [ref=e1313]:
+                    - listitem [ref=e1314]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1315]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1317]
+                    - listitem [ref=e1318]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1319] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1321]
+                    - listitem [ref=e1322]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1323] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1325]
+                    - listitem [ref=e1326]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1327] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1329]
+                    - listitem [ref=e1330]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1331] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1333]
+                    - listitem [ref=e1334]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1335] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1337]
+                    - listitem [ref=e1338]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1339] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1341]
+                    - listitem [ref=e1342]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1343] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1345]
+                    - listitem [ref=e1346]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1347] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1349]
+                    - listitem [ref=e1350]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1351] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1353]
+                    - listitem [ref=e1354]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1355] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1357]
+                    - listitem [ref=e1358]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1359] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1361]
+                    - listitem [ref=e1362]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1363] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1365]
+                    - listitem [ref=e1366]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1367] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1369]
+                    - listitem [ref=e1370]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1371] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1373]
+                    - listitem [ref=e1374]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1375] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1377]
+                    - listitem [ref=e1378]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1379] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1381]
+                    - listitem [ref=e1382]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1383] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1385]
+                    - listitem [ref=e1386]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1387] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1389]
+                    - listitem [ref=e1390]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1391] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1393]
+                    - listitem [ref=e1394]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1395] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1397]
+                    - listitem [ref=e1398]:
+                      - button "Гостевой дом Маруся на Александровском" [ref=e1399] [cursor=pointer]:
+                        - img "Гостевой дом Маруся на Александровском" [ref=e1401]
+              - generic [ref=e1403]:
+                - heading "Услуги и удобства" [level=4] [ref=e1404]
+                - generic [ref=e1407]:
+                  - generic [ref=e1408]:
+                    - heading "Популярные" [level=3] [ref=e1410]
+                    - list [ref=e1411]:
+                      - listitem [ref=e1412]: Бесплатный интернет
+                      - listitem [ref=e1413]: Трансфер
+                      - listitem [ref=e1414]: Подходит для детей
+                      - listitem [ref=e1415]: Бар или ресторан
+                      - listitem [ref=e1416]: Для гостей с ограниченными возможностями
+                  - generic [ref=e1417]:
+                    - heading "Горнолыжка" [level=3] [ref=e1419]
+                    - list [ref=e1420]:
+                      - listitem [ref=e1421]:
+                        - text: Продажа горнолыжных абонементов
+                        - paragraph [ref=e1422]: оплачивается отдельно
+                      - listitem [ref=e1423]:
+                        - text: Прокат лыжной экипировки
+                        - paragraph [ref=e1424]: оплачивается отдельно
+                      - listitem [ref=e1425]: Прямой выход на склон
+                      - listitem [ref=e1426]: Катание на лыжах
+                      - listitem [ref=e1427]: Трансфер до подъемника
+                  - generic [ref=e1428]:
+                    - heading "Общее" [level=3] [ref=e1430]
+                    - list [ref=e1431]:
+                      - listitem [ref=e1432]: Винодельческое хозяйство
+                      - listitem [ref=e1433]: Кондиционер
+                      - listitem [ref=e1434]: Круглосуточная стойка регистрации
+                      - listitem [ref=e1435]: Отель для некурящих
+                      - listitem [ref=e1436]: Отопление
+                      - listitem [ref=e1437]: Охрана
+                      - listitem [ref=e1438]: Стиральная машина
+                      - listitem [ref=e1439]: Ускоренная регистрация заезда и выезда
+                      - listitem [ref=e1440]: Терраса
+                      - listitem [ref=e1441]: Ранняя регистрация заезда
+                      - listitem [ref=e1442]: Поздняя регистрация выезда
+                      - listitem [ref=e1443]: Аптека
+                      - listitem [ref=e1444]: Индивидуальная регистрация заезда и отъезда
+                      - listitem [ref=e1445]: Сушилка
+                      - listitem [ref=e1446]: Огнетушитель
+                      - listitem [ref=e1447]: Курение разрешено
+                      - listitem [ref=e1448]: Курение запрещено на всей территории
+                      - listitem [ref=e1449]: Мебель на улице
+                      - listitem [ref=e1450]: Отсутствие лифтов
+                  - generic [ref=e1451]:
+                    - heading "В номерах" [level=3] [ref=e1453]
+                    - list [ref=e1454]:
+                      - listitem [ref=e1455]: Люкс для новобрачных
+                      - listitem [ref=e1456]: Обслуживание номеров
+                      - listitem [ref=e1457]: Холодильник
+                      - listitem [ref=e1458]: Семейные номера
+                      - listitem [ref=e1459]: VIP-удобства в номере
+                      - listitem [ref=e1460]: Телевизор
+                      - listitem [ref=e1461]: Запирающийся шкафчик
+                      - listitem [ref=e1462]: Халат
+                      - listitem [ref=e1463]: Москитная сетка
+                  - generic [ref=e1464]:
+                    - heading "Доступность" [level=3] [ref=e1466]
+                    - list [ref=e1467]:
+                      - listitem [ref=e1468]: Удобства для гостей с ограниченными физическими возможностями
+                  - generic [ref=e1469]:
+                    - heading "Услуги и удобства" [level=3] [ref=e1471]
+                    - list [ref=e1472]:
+                      - listitem [ref=e1473]: Гладильные принадлежности
+                      - listitem [ref=e1474]:
+                        - text: Гладильные услуги
+                        - paragraph [ref=e1475]: оплачивается отдельно
+                      - listitem [ref=e1476]:
+                        - text: Прачечная
+                        - paragraph [ref=e1477]: оплачивается отдельно
+                      - listitem [ref=e1478]: Фен (по запросу)
+                      - listitem [ref=e1479]: Хранение багажа
+                      - listitem [ref=e1480]: Утюг
+                  - generic [ref=e1481]:
+                    - heading "Питание" [level=3] [ref=e1483]
+                    - list [ref=e1484]:
+                      - listitem [ref=e1485]: Бесплатный чай/кофе
+                      - listitem [ref=e1486]: Кафе
+                      - listitem [ref=e1487]: Возможен полупансион
+                      - listitem [ref=e1488]: Кухня
+                      - listitem [ref=e1489]: Микроволновая печь
+                  - generic [ref=e1490]:
+                    - heading "Интернет" [level=3] [ref=e1492]
+                    - list [ref=e1493]:
+                      - listitem [ref=e1494]: Бесплатный Wi-Fi
+                      - listitem [ref=e1495]: Бесплатный доступ в интернет
+                  - generic [ref=e1496]:
+                    - heading "Трансфер" [level=3] [ref=e1498]
+                    - list [ref=e1499]:
+                      - listitem [ref=e1500]:
+                        - text: Трансфер
+                        - paragraph [ref=e1501]: оплачивается отдельно
+                      - listitem [ref=e1502]:
+                        - text: Прокат автомобилей
+                        - paragraph [ref=e1503]: оплачивается отдельно
+                      - listitem [ref=e1504]: Трансфер от аэропорта
+                      - listitem [ref=e1505]: Бесплатный трансфер от/до жд вокзала
+                  - generic [ref=e1506]:
+                    - heading "Персонал говорит" [level=3] [ref=e1508]
+                    - list [ref=e1509]:
+                      - listitem [ref=e1510]: на немецком
+                      - listitem [ref=e1511]: на русском
+                      - listitem [ref=e1512]: на английском
+                      - listitem [ref=e1513]: на итальянском
+                  - generic [ref=e1514]:
+                    - heading "Развлечения" [level=3] [ref=e1516]
+                    - list [ref=e1517]:
+                      - listitem [ref=e1518]: Бесплатный прокат велосипедов
+                      - listitem [ref=e1519]: Прокат велосипедов
+                      - listitem [ref=e1520]: Прокат снегоходов и квадроциклов
+                      - listitem [ref=e1521]: Удобства для барбекю
+                      - listitem [ref=e1522]: Бильярд
+                      - listitem [ref=e1523]: Боулинг
+                      - listitem [ref=e1524]: Казино
+                      - listitem [ref=e1525]: Пеший туризм
+                      - listitem [ref=e1526]: Развлекательные мероприятия
+                      - listitem [ref=e1527]: Рыбалка
+                      - listitem [ref=e1528]: Подходит для проведения праздничных мероприятий
+                      - listitem [ref=e1529]: Площадка для барбекю
+                  - generic [ref=e1530]:
+                    - heading "Бассейн и пляж" [level=3] [ref=e1532]
+                    - list [ref=e1533]:
+                      - listitem [ref=e1534]: Развлечения на воде
+                  - generic [ref=e1535]:
+                    - heading "Бизнес" [level=3] [ref=e1537]
+                    - list [ref=e1538]:
+                      - listitem [ref=e1539]: Организация встреч и банкетов
+                  - generic [ref=e1540]:
+                    - heading "Спорт" [level=3] [ref=e1542]
+                    - list [ref=e1543]:
+                      - listitem [ref=e1544]: Бадминтон
+                      - listitem [ref=e1545]: Верховая езда
+                      - listitem [ref=e1546]: Сквош
+                      - listitem [ref=e1547]: Дайвинг
+                      - listitem [ref=e1548]: Катание на велосипеде
+                      - listitem [ref=e1549]: Плавание на лодках
+                      - listitem [ref=e1550]: Настольный теннис
+                      - listitem [ref=e1551]: Парусный спорт
+                      - listitem [ref=e1552]: Сноркелинг
+                      - listitem [ref=e1553]: Яхтинг
+                  - generic [ref=e1554]:
+                    - heading "Красота и здоровье" [level=3] [ref=e1556]
+                    - list [ref=e1557]:
+                      - listitem [ref=e1558]: Аптечка первой помощи
+                  - generic [ref=e1559]:
+                    - heading "Дети" [level=3] [ref=e1561]
+                    - list [ref=e1562]:
+                      - listitem [ref=e1563]: Размещение подходит для семей/детей
+                      - listitem [ref=e1564]: Детские телеканалы
+                  - generic [ref=e1565]:
+                    - heading "Санитарные меры" [level=3] [ref=e1567]
+                    - list [ref=e1568]:
+                      - listitem [ref=e1569]: Индивидуальные средства защиты для персонала
+                      - listitem [ref=e1570]: Усиленные меры дезинфекции
+                      - listitem [ref=e1571]: Температурный контроль для гостей
+                      - listitem [ref=e1572]: Индивидуальные средства защиты для гостей
+                      - listitem [ref=e1573]: Бесконтактная регистрация заезда и/или выезда
+                      - listitem [ref=e1574]: Питание в индивидуальной упаковке
+                - generic [ref=e1576]:
+                  - paragraph [ref=e1577]: от 4 044 ₽
+                  - button "Посмотреть цены" [ref=e1580] [cursor=pointer]:
+                    - generic [ref=e1581]: Посмотреть цены
+        - generic [ref=e171]:
+          - generic [ref=e173]:
+            - generic [ref=e175]:
+              - button "8,3" [ref=e178] [cursor=pointer]:
+                - img [ref=e179]
+                - generic [ref=e181]: 8,3
+              - generic [ref=e182]:
+                - paragraph [ref=e183]: Отлично
+                - generic [ref=e185] [cursor=pointer]: 15 отзывов
+            - generic [ref=e188]:
+              - generic [ref=e190]:
+                - generic [ref=e194]: Roman
+                - paragraph [ref=e195]:
+                  - generic [ref=e196]: "Что было хорошо:"
+                  - text: отличный гостевой дом, уютно, тихо и спокойно, море недалеко 5-10 минут ходьбы.
+                - paragraph [ref=e197]:
+                  - generic [ref=e198]: "Что было плохо:"
+                  - text: "-"
+              - generic [ref=e200]:
+                - generic [ref=e204]: Artur
+                - paragraph [ref=e205]:
+                  - generic [ref=e206]: "Что было хорошо:"
+                  - text: Все чистенько,общая кухня,там тоже всегда чисто удобная локация,все рядом за такую цену отличный вариант
+                - paragraph [ref=e207]:
+                  - generic [ref=e208]: "Что было плохо:"
+                  - text: "-"
+              - generic [ref=e210]:
+                - generic [ref=e214]: Oleg
+                - paragraph [ref=e215]:
+                  - generic [ref=e216]: "Что было хорошо:"
+                  - text: всё понравилось, соответствие цена качество,по графику уборка и смена белья,удобное расположение.
+                - paragraph [ref=e217]:
+                  - generic [ref=e218]: "Что было плохо:"
+                  - text: "-"
+              - generic [ref=e220]:
+                - generic [ref=e224]: Alexey
+                - paragraph [ref=e225]:
+                  - generic [ref=e226]: "Что было хорошо:"
+                  - text: Сответствует реальным описаниям
+                - paragraph [ref=e227]:
+                  - generic [ref=e228]: "Что было плохо:"
+                  - text: В номере небыло пароля от wi-fi
+              - generic [ref=e230]:
+                - generic [ref=e234]: Svetlana
+                - paragraph [ref=e235]:
+                  - generic [ref=e236]: "Что было хорошо:"
+                  - text: Место расположения ,чисто, море рядом и магазины,кухня большая,кулер есть,все+
+                - paragraph [ref=e237]:
+                  - generic [ref=e238]: "Что было плохо:"
+                  - text: Вентиляции нет в душе
+            - generic [ref=e239]:
+              - generic [ref=e240]:
+                - button [ref=e241] [cursor=pointer]:
+                  - img [ref=e243]
+                - button [ref=e245] [cursor=pointer]:
+                  - img [ref=e247]
+              - button "Читать все отзывы • 11" [ref=e250] [cursor=pointer]:
+                - generic [ref=e251]: Читать все отзывы • 11
+          - generic [ref=e252]:
+            - paragraph [ref=e253]: Популярные удобства
+            - list [ref=e254]:
+              - listitem [ref=e255]: Бесплатный интернет
+              - listitem [ref=e256]: Трансфер
+              - listitem [ref=e257]: Подходит для детей
+              - listitem [ref=e258]: Бар или ресторан
+              - listitem [ref=e259]: Для гостей с ограниченными возможностями
+            - button "Все удобства • 88" [ref=e261] [cursor=pointer]:
+              - generic [ref=e262]: Все удобства • 88
+          - generic [ref=e263]:
+            - paragraph [ref=e264]: Что есть рядом
+            - list [ref=e265]:
+              - listitem [ref=e266]:
+                - generic [ref=e267]: Кудепста
+                - generic [ref=e268]: 601 м
+              - listitem [ref=e269]:
+                - generic [ref=e270]: Пляж Робинзон (Центральный)
+                - generic [ref=e271]: 627 м
+              - listitem [ref=e272]:
+                - generic [ref=e273]: Пляж Южный-2
+                - generic [ref=e274]: 1,3 км
+              - listitem [ref=e275]:
+                - generic [ref=e276]: Пляж Чкаловский
+                - generic [ref=e277]: 1,7 км
+              - listitem [ref=e278]:
+                - generic [ref=e279]: Пляж Барракуда
+                - generic [ref=e280]: 1,8 км
+            - button "Смотреть на карте • 21" [ref=e282] [cursor=pointer]:
+              - generic [ref=e283]: Смотреть на карте • 21
+      - generic [ref=e285]:
+        - heading "Доступные номера" [level=2] [ref=e286]
+        - paragraph [ref=e287]: Укажите даты поездки, и мы покажем вам актуальные цены
+        - generic [ref=e288]:
+          - paragraph [ref=e289]: Даты не выбраны
+          - paragraph [ref=e290]: Если не знаете конкретные даты, выберите примерные числа, чтобы сориентироваться по цене.
+          - button "Выбрать даты" [ref=e291] [cursor=pointer]:
+            - generic [ref=e292]: Выбрать даты
+      - generic [ref=e294]:
+        - generic [ref=e295]:
+          - heading "Расположение" [level=3] [ref=e297]
+          - paragraph [ref=e298]: Кудепста, Александровский переулок, д.8, Сочи
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - generic:
+                - button [ref=e301] [cursor=pointer]:
+                  - img [ref=e1583]
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button "expand-button-icon expand-button-icon":
+                          - button "expand-button-icon":
+                            - generic:
+                              - img "Guest rooms"
+                            - generic:
+                              - generic: Гостевой дом Маруся на Александровском
+                              - generic:
+                                - button "8,3":
+                                  - img
+                                  - generic: 8,3
+                          - button "expand-button-icon":
+                            - img
+              - generic:
+                - generic [ref=e308]: 500 m
+                - generic [ref=e309]:
+                  - text: © Участники
+                  - link "OpenStreetMap" [ref=e310] [cursor=pointer]:
+                    - /url: https://osm.org/copyright
+            - generic [ref=e311]:
+              - button "Смотреть отели рядом" [ref=e312] [cursor=pointer]:
+                - generic [ref=e313]: Смотреть отели рядом
+              - button "expand-button-icon" [ref=e314] [cursor=pointer]:
+                - img [ref=e315]
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - button "zoom-in" [ref=e319] [cursor=pointer]:
+                  - img [ref=e320]
+                - button "zoom-out" [ref=e322] [cursor=pointer]:
+                  - img [ref=e323]
+              - button "refresh" [disabled] [ref=e326]:
+                - img [ref=e327]
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - button "Что вокруг" [ref=e333] [cursor=pointer]
+              - list [ref=e334]:
+                - listitem [ref=e335]:
+                  - button "Пляж Робинзон (Центральный)" [ref=e336] [cursor=pointer]
+                  - text: 627 м
+                - listitem [ref=e337]:
+                  - button "Пляж Южный-2" [ref=e338] [cursor=pointer]
+                  - text: 1,3 км
+                - listitem [ref=e339]:
+                  - button "Пляж Чкаловский" [ref=e340] [cursor=pointer]
+                  - text: 1,7 км
+                - listitem [ref=e341]:
+                  - button "Пляж Барракуда" [ref=e342] [cursor=pointer]
+                  - text: 1,8 км
+            - generic [ref=e343]:
+              - button "Достопримечательности" [ref=e344] [cursor=pointer]
+              - list [ref=e345]:
+                - listitem [ref=e346]:
+                  - button "Смотровая башня горы Ахун" [ref=e347] [cursor=pointer]
+                  - text: 7,4 км
+                - listitem [ref=e348]:
+                  - button "Олимпийский парк" [ref=e349] [cursor=pointer]
+                  - text: 11 км
+                - listitem [ref=e350]:
+                  - button "Сочинский дендрарий" [ref=e351] [cursor=pointer]
+                  - text: 14,8 км
+                - listitem [ref=e352]:
+                  - button "Порт Сочи" [ref=e353] [cursor=pointer]
+                  - text: 17 км
+                - listitem [ref=e354]:
+                  - button "Парк Ривьера" [ref=e355] [cursor=pointer]
+                  - text: 17,9 км
+                - listitem [ref=e356]:
+                  - button "Торгово-развлекательный комплекс МореМолл" [ref=e357] [cursor=pointer]
+                  - text: 17,9 км
+                - listitem [ref=e358]:
+                  - button "Крепость Абаата" [ref=e359] [cursor=pointer]
+                  - text: 32,8 км
+                - listitem [ref=e360]:
+                  - button "Замок принца Ольденбургского" [ref=e361] [cursor=pointer]
+                  - text: 32,9 км
+                - listitem [ref=e362]:
+                  - button "Приморский парк" [ref=e363] [cursor=pointer]
+                  - text: 33,4 км
+                - listitem [ref=e364]:
+                  - button "Гора Мамдзышха" [ref=e365] [cursor=pointer]
+                  - text: 36,2 км
+            - generic [ref=e366]:
+              - button "Аэропорты" [ref=e367] [cursor=pointer]
+              - list [ref=e368]:
+                - listitem [ref=e369]:
+                  - button "Международный аэропорт Сочи" [ref=e370] [cursor=pointer]
+                  - text: 6,4 км
+            - generic [ref=e371]:
+              - button "Вокзалы" [ref=e372] [cursor=pointer]
+              - list [ref=e373]:
+                - listitem [ref=e374]:
+                  - button "Кудепста" [ref=e375] [cursor=pointer]
+                  - text: 601 м
+        - generic [ref=e376]:
+          - heading "Описание гостевого дома" [level=3] [ref=e378]
+          - generic [ref=e379]:
+            - generic [ref=e381]:
+              - paragraph [ref=e382]: Расположение
+              - paragraph [ref=e383]: "Почувствовать себя как дома во время долгой поездки — бесценно. Гостевой дом «Гостевой дом Маруся на Александровском» расположен в Сочи. Этот гостевой дом находится в 17 км от центра города. Рядом с гостевым домом можно прогуляться. Неподалёку: Пляж Робинзон (Центральный), Пляж Южный-2 и Пляж Чкаловский."
+            - button "Развернуть описание" [ref=e385] [cursor=pointer]:
+              - img [ref=e386]
+              - text: Развернуть описание
+            - generic [ref=e389]:
+              - paragraph [ref=e390]: Факты о гостевом доме
+              - generic [ref=e391]: Предоставляет выгодные условия проживания для участников программы лояльности
+              - generic [ref=e395]:
+                - paragraph [ref=e396]: Тип розетки
+                - generic [ref=e397]:
+                  - generic [ref=e398]:
+                    - paragraph [ref=e399]: Европейская
+                    - img [ref=e401] [cursor=pointer]
+                  - paragraph [ref=e404]: 220 В / 50 Гц
+                - generic [ref=e405]:
+                  - generic [ref=e406]:
+                    - paragraph [ref=e407]: Европейская
+                    - img [ref=e409] [cursor=pointer]
+                  - paragraph [ref=e412]: (с заземлением)
+                  - paragraph [ref=e413]: 220 В / 50 Гц
+        - generic [ref=e415]:
+          - heading "Услуги и удобства" [level=2] [ref=e416]
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - heading "Горнолыжка" [level=3] [ref=e420]
+              - list [ref=e421]:
+                - listitem [ref=e422]:
+                  - text: Продажа горнолыжных абонементов
+                  - paragraph [ref=e423]: оплачивается отдельно
+                - listitem [ref=e424]:
+                  - text: Прокат лыжной экипировки
+                  - paragraph [ref=e425]: оплачивается отдельно
+                - listitem [ref=e426]: Прямой выход на склон
+                - listitem [ref=e427]: Катание на лыжах
+                - listitem [ref=e428]: Трансфер до подъемника
+            - generic [ref=e429]:
+              - heading "Популярные" [level=3] [ref=e431]
+              - list [ref=e432]:
+                - listitem [ref=e433]: Бесплатный интернет
+                - listitem [ref=e434]: Трансфер
+                - listitem [ref=e435]: Подходит для детей
+                - listitem [ref=e436]: Бар или ресторан
+                - listitem [ref=e437]: Для гостей с ограниченными возможностями
+            - generic [ref=e438]:
+              - heading "Общее" [level=3] [ref=e440]
+              - list [ref=e441]:
+                - listitem [ref=e442]: Винодельческое хозяйство
+                - listitem [ref=e443]: Кондиционер
+                - listitem [ref=e444]: Круглосуточная стойка регистрации
+                - listitem [ref=e445]: Отель для некурящих
+                - listitem [ref=e446]: Отопление
+                - listitem [ref=e447]: Охрана
+                - listitem [ref=e448]: Стиральная машина
+                - listitem [ref=e449]: Ускоренная регистрация заезда и выезда
+                - listitem [ref=e450]: Терраса
+                - listitem [ref=e451]: Ранняя регистрация заезда
+                - listitem [ref=e452]: Поздняя регистрация выезда
+                - listitem [ref=e453]: Аптека
+                - listitem [ref=e454]: Индивидуальная регистрация заезда и отъезда
+                - listitem [ref=e455]: Сушилка
+                - listitem [ref=e456]: Огнетушитель
+                - listitem [ref=e457]: Курение разрешено
+                - listitem [ref=e458]: Курение запрещено на всей территории
+                - listitem [ref=e459]: Мебель на улице
+                - listitem [ref=e460]: Отсутствие лифтов
+            - generic [ref=e461]:
+              - heading "В номерах" [level=3] [ref=e463]
+              - list [ref=e464]:
+                - listitem [ref=e465]: Люкс для новобрачных
+                - listitem [ref=e466]: Обслуживание номеров
+                - listitem [ref=e467]: Холодильник
+                - listitem [ref=e468]: Семейные номера
+                - listitem [ref=e469]: VIP-удобства в номере
+                - listitem [ref=e470]: Телевизор
+                - listitem [ref=e471]: Запирающийся шкафчик
+                - listitem [ref=e472]: Халат
+                - listitem [ref=e473]: Москитная сетка
+            - generic [ref=e474]:
+              - heading "Доступность" [level=3] [ref=e476]
+              - list [ref=e477]:
+                - listitem [ref=e478]: Удобства для гостей с ограниченными физическими возможностями
+            - generic [ref=e479]:
+              - heading "Услуги и удобства" [level=3] [ref=e481]
+              - list [ref=e482]:
+                - listitem [ref=e483]: Гладильные принадлежности
+                - listitem [ref=e484]:
+                  - text: Гладильные услуги
+                  - paragraph [ref=e485]: оплачивается отдельно
+                - listitem [ref=e486]:
+                  - text: Прачечная
+                  - paragraph [ref=e487]: оплачивается отдельно
+                - listitem [ref=e488]: Фен (по запросу)
+                - listitem [ref=e489]: Хранение багажа
+                - listitem [ref=e490]: Утюг
+            - generic [ref=e491]:
+              - heading "Питание" [level=3] [ref=e493]
+              - list [ref=e494]:
+                - listitem [ref=e495]: Бесплатный чай/кофе
+                - listitem [ref=e496]: Кафе
+                - listitem [ref=e497]: Возможен полупансион
+                - listitem [ref=e498]: Кухня
+                - listitem [ref=e499]: Микроволновая печь
+            - generic [ref=e500]:
+              - heading "Интернет" [level=3] [ref=e502]
+              - list [ref=e503]:
+                - listitem [ref=e504]: Бесплатный Wi-Fi
+                - listitem [ref=e505]: Бесплатный доступ в интернет
+            - generic [ref=e506]:
+              - heading "Трансфер" [level=3] [ref=e508]
+              - list [ref=e509]:
+                - listitem [ref=e510]:
+                  - text: Трансфер
+                  - paragraph [ref=e511]: оплачивается отдельно
+                - listitem [ref=e512]:
+                  - text: Прокат автомобилей
+                  - paragraph [ref=e513]: оплачивается отдельно
+                - listitem [ref=e514]: Трансфер от аэропорта
+                - listitem [ref=e515]: Бесплатный трансфер от/до жд вокзала
+            - generic [ref=e516]:
+              - heading "Персонал говорит" [level=3] [ref=e518]
+              - list [ref=e519]:
+                - listitem [ref=e520]: на немецком
+                - listitem [ref=e521]: на русском
+                - listitem [ref=e522]: на английском
+                - listitem [ref=e523]: на итальянском
+            - generic [ref=e524]:
+              - heading "Развлечения" [level=3] [ref=e526]
+              - list [ref=e527]:
+                - listitem [ref=e528]: Бесплатный прокат велосипедов
+                - listitem [ref=e529]: Прокат велосипедов
+                - listitem [ref=e530]: Прокат снегоходов и квадроциклов
+                - listitem [ref=e531]: Удобства для барбекю
+                - listitem [ref=e532]: Бильярд
+                - listitem [ref=e533]: Боулинг
+                - listitem [ref=e534]: Казино
+                - listitem [ref=e535]: Пеший туризм
+                - listitem [ref=e536]: Развлекательные мероприятия
+                - listitem [ref=e537]: Рыбалка
+                - listitem [ref=e538]: Подходит для проведения праздничных мероприятий
+                - listitem [ref=e539]: Площадка для барбекю
+            - generic [ref=e540]:
+              - heading "Бассейн и пляж" [level=3] [ref=e542]
+              - list [ref=e543]:
+                - listitem [ref=e544]: Развлечения на воде
+            - generic [ref=e545]:
+              - heading "Бизнес" [level=3] [ref=e547]
+              - list [ref=e548]:
+                - listitem [ref=e549]: Организация встреч и банкетов
+            - generic [ref=e550]:
+              - heading "Спорт" [level=3] [ref=e552]
+              - list [ref=e553]:
+                - listitem [ref=e554]: Бадминтон
+                - listitem [ref=e555]: Верховая езда
+                - listitem [ref=e556]: Сквош
+                - listitem [ref=e557]: Дайвинг
+                - listitem [ref=e558]: Катание на велосипеде
+                - listitem [ref=e559]: Плавание на лодках
+                - listitem [ref=e560]: Настольный теннис
+                - listitem [ref=e561]: Парусный спорт
+                - listitem [ref=e562]: Сноркелинг
+                - listitem [ref=e563]: Яхтинг
+            - generic [ref=e564]:
+              - heading "Красота и здоровье" [level=3] [ref=e566]
+              - list [ref=e567]:
+                - listitem [ref=e568]: Аптечка первой помощи
+            - generic [ref=e569]:
+              - heading "Дети" [level=3] [ref=e571]
+              - list [ref=e572]:
+                - listitem [ref=e573]: Размещение подходит для семей/детей
+                - listitem [ref=e574]: Детские телеканалы
+            - generic [ref=e575]:
+              - heading "Санитарные меры" [level=3] [ref=e577]
+              - list [ref=e578]:
+                - listitem [ref=e579]: Индивидуальные средства защиты для персонала
+                - listitem [ref=e580]: Усиленные меры дезинфекции
+                - listitem [ref=e581]: Температурный контроль для гостей
+                - listitem [ref=e582]: Индивидуальные средства защиты для гостей
+                - listitem [ref=e583]: Бесконтактная регистрация заезда и/или выезда
+                - listitem [ref=e584]: Питание в индивидуальной упаковке
+        - generic [ref=e585]:
+          - generic [ref=e587]:
+            - heading "Условия размещения" [level=3] [ref=e588]
+            - generic [ref=e589]:
+              - generic [ref=e590]:
+                - generic [ref=e591]: Заселение и выезд
+                - table [ref=e593]:
+                  - rowgroup [ref=e594]:
+                    - row "Заселение" [ref=e595]:
+                      - columnheader "Заселение" [ref=e596]
+                    - row "После 14:00" [ref=e597]:
+                      - cell "После 14:00" [ref=e598]
+                - table [ref=e600]:
+                  - rowgroup [ref=e601]:
+                    - row "Выезд" [ref=e602]:
+                      - columnheader "Выезд" [ref=e603]
+                    - row "До 12:00" [ref=e604]:
+                      - cell "До 12:00" [ref=e605]
+              - generic [ref=e606]:
+                - generic [ref=e607]: Депозит
+                - list [ref=e608]:
+                  - listitem [ref=e609]:
+                    - text: •
+                    - generic [ref=e610]: "-"
+                    - generic [ref=e611]: 2500 RUB наличными с номера за весь период проживания
+              - generic [ref=e612]:
+                - generic [ref=e613]: Детская люлька
+                - list [ref=e614]:
+                  - listitem [ref=e615]:
+                    - text: •
+                    - generic [ref=e616]: Максимальное количество нужно уточнять
+                    - generic [ref=e617]: Стоимость нужно уточнять
+              - generic [ref=e618]:
+                - generic [ref=e619]: Животные
+                - list [ref=e620]:
+                  - listitem [ref=e621]:
+                    - text: •
+                    - generic [ref=e622]: Разрешены любые животные
+                    - generic [ref=e623]: Стоимость нужно уточнять
+          - text: • • •
+          - generic [ref=e624]:
+            - heading "Дополнительная информация" [level=3] [ref=e625]
+            - table [ref=e628]:
+              - rowgroup [ref=e629]:
+                - row "Требования к документам для заселения зависят от типа объекта размещения и применимых к нему правил. Для гостиниц и иных средств размещения могут приниматься паспорт РФ, заграничный паспорт или водительское удостоверение. Для квартир, апартаментов и иных объектов, где заселение или заключение договора осуществляется по правилам конкретного объекта, требования к документам определяются объектом размещения. Стойка регистрации работает 24/7." [ref=e630]:
+                  - cell "Требования к документам для заселения зависят от типа объекта размещения и применимых к нему правил. Для гостиниц и иных средств размещения могут приниматься паспорт РФ, заграничный паспорт или водительское удостоверение. Для квартир, апартаментов и иных объектов, где заселение или заключение договора осуществляется по правилам конкретного объекта, требования к документам определяются объектом размещения. Стойка регистрации работает 24/7." [ref=e631]:
+                    - generic [ref=e632]: Требования к документам для заселения зависят от типа объекта размещения и применимых к нему правил. Для гостиниц и иных средств размещения могут приниматься паспорт РФ, заграничный паспорт или водительское удостоверение. Для квартир, апартаментов и иных объектов, где заселение или заключение договора осуществляется по правилам конкретного объекта, требования к документам определяются объектом размещения.
+                    - generic [ref=e633]: Стойка регистрации работает 24/7.
+          - generic [ref=e634]:
+            - generic [ref=e636]:
+              - heading "Оплата" [level=3] [ref=e637]
+              - generic [ref=e638]:
+                - generic [ref=e639]:
+                  - generic [ref=e640]: В гостевом доме
+                  - list [ref=e641]:
+                    - listitem [ref=e642]:
+                      - text: •
+                      - generic [ref=e643]: Наличными в валюте гостевого дома — RUB
+                    - listitem [ref=e644]:
+                      - text: •
+                      - generic [ref=e645]: "Картой:"
+                      - generic [ref=e647]:
+                        - img "card-logo" [ref=e648]
+                        - img "card-logo" [ref=e649]
+                        - img "card-logo" [ref=e650]
+                        - img "card-logo" [ref=e651]
+                - generic [ref=e652]:
+                  - generic [ref=e653]: На сайте
+                  - table [ref=e654]:
+                    - rowgroup [ref=e655]:
+                      - row "Для некоторых тарифов доступна оплата банковской картой при бронировании на сайте. Можно частично или полностью оплатить бронирование баллами. Можно оплатить бронирование с помощью промокода, если он у вас есть." [ref=e656]:
+                        - cell "Для некоторых тарифов доступна оплата банковской картой при бронировании на сайте. Можно частично или полностью оплатить бронирование баллами. Можно оплатить бронирование с помощью промокода, если он у вас есть." [ref=e657]:
+                          - paragraph [ref=e658]: Для некоторых тарифов доступна оплата банковской картой при бронировании на сайте. Можно частично или полностью оплатить бронирование баллами. Можно оплатить бронирование с помощью промокода, если он у вас есть.
+            - generic [ref=e659]:
+              - heading "Корпоративным клиентам" [level=3] [ref=e660]
+              - generic [ref=e661]:
+                - paragraph [ref=e662]:
+                  - text: Если вы хотите оплатить заказ безналичным способом как юридическое лицо, пожалуйста, напишите на
+                  - link "corp@ostrovok.ru" [ref=e663] [cursor=pointer]:
+                    - /url: mailto:corp@ostrovok.ru
+                - link "Узнать больше" [ref=e664] [cursor=pointer]:
+                  - /url: https://b2b.ostrovok.ru/travel/corp_product/
+                  - generic [ref=e665]: Узнать больше
+      - generic [ref=e666]:
+        - generic [ref=e667]:
+          - generic [ref=e668]:
+            - button "8,3" [ref=e670]:
+              - img [ref=e671]
+              - generic [ref=e673]: 8,3
+            - paragraph [ref=e674]: Отлично
+            - paragraph [ref=e675]: Основано на 15 отзывах гостей из разных стран.
+            - paragraph [ref=e676]: На вашем языке доступно 11 отзывов
+          - list [ref=e677]:
+            - listitem [ref=e678]:
+              - generic [ref=e681]:
+                - paragraph [ref=e682]: Чистота
+                - paragraph [ref=e683]: 8,9
+            - listitem [ref=e684]:
+              - generic [ref=e687]:
+                - paragraph [ref=e688]: Средства гигиены
+                - paragraph [ref=e689]: 6,3
+            - listitem [ref=e690]:
+              - generic [ref=e693]:
+                - paragraph [ref=e694]: Расположение
+                - paragraph [ref=e695]: 8,5
+            - listitem [ref=e696]:
+              - generic [ref=e699]:
+                - paragraph [ref=e700]: Питание
+                - paragraph [ref=e701]: "10"
+            - listitem [ref=e702]:
+              - generic [ref=e705]:
+                - paragraph [ref=e706]: Цена/Качество
+                - paragraph [ref=e707]: 8,8
+            - listitem [ref=e708]:
+              - generic [ref=e711]:
+                - paragraph [ref=e712]: Номер
+                - paragraph [ref=e713]: 8,7
+            - listitem [ref=e714]:
+              - generic [ref=e717]:
+                - paragraph [ref=e718]: Обслуживание
+                - paragraph [ref=e719]: 8,7
+            - listitem [ref=e720]:
+              - generic [ref=e723]:
+                - paragraph [ref=e724]: Качество Wi-Fi
+                - paragraph [ref=e725]: 4,9
+        - generic [ref=e727]:
+          - generic [ref=e730]:
+            - paragraph [ref=e731]: Фото гостей•1
+            - list [ref=e733]:
+              - menuitem "https://cdn.worldota.net/t/100x100/hotel_review/c5/62/c562249cc5841c33eadb5a379da34dd4b2018526.JPEG" [ref=e734] [cursor=pointer]:
+                - img "https://cdn.worldota.net/t/100x100/hotel_review/c5/62/c562249cc5841c33eadb5a379da34dd4b2018526.JPEG" [ref=e736]
+          - generic [ref=e740]:
+            - paragraph [ref=e741]:
+              - generic [ref=e742]: Сортировка отзывов
+            - generic [ref=e743]:
+              - generic [ref=e744]:
+                - generic [ref=e747]: Сначала полезные
+                - textbox "Сортировка отзывов Сначала полезные"
+              - img [ref=e750]
+          - list [ref=e752]:
+            - listitem [ref=e753]:
+              - generic [ref=e755]:
+                - generic [ref=e756]:
+                  - generic [ref=e758]: Oleg
+                  - paragraph [ref=e761]: отдых, в одиночку
+                  - paragraph [ref=e762]: октябрь 2025 г.
+                  - paragraph [ref=e763]: Люкс Deluxe, 12 ночей
+                - generic [ref=e764]:
+                  - generic [ref=e766]:
+                    - button "9,4" [ref=e768]:
+                      - img [ref=e769]
+                      - generic [ref=e771]: 9,4
+                    - paragraph [ref=e772]: Превосходно
+                    - button "Раскрыть детали" [ref=e773] [cursor=pointer]
+                  - generic [ref=e774]:
+                    - paragraph [ref=e775]: Что было хорошо
+                    - paragraph [ref=e777]: всё понравилось, соответствие цена качество,по графику уборка и смена белья,удобное расположение.
+                    - paragraph [ref=e778]: Что было плохо
+                    - paragraph [ref=e780]: "-"
+            - listitem [ref=e781]:
+              - generic [ref=e783]:
+                - generic [ref=e784]:
+                  - generic [ref=e786]: Artur
+                  - paragraph [ref=e789]: отдых, в одиночку
+                  - paragraph [ref=e790]: август 2025 г.
+                  - paragraph [ref=e791]: Студия Superior (дополнительная кровать не включена), 3 ночи
+                - generic [ref=e792]:
+                  - generic [ref=e794]:
+                    - button "9,8" [ref=e796]:
+                      - img [ref=e797]
+                      - generic [ref=e799]: 9,8
+                    - paragraph [ref=e800]: Превосходно
+                    - button "Раскрыть детали" [ref=e801] [cursor=pointer]
+                  - generic [ref=e802]:
+                    - paragraph [ref=e803]: Что было хорошо
+                    - generic [ref=e804]:
+                      - paragraph [ref=e805]: Все чистенько,общая кухня,там тоже всегда чисто
+                      - paragraph [ref=e806]: удобная локация,все рядом
+                      - paragraph [ref=e807]: за такую цену отличный вариант
+                    - paragraph [ref=e808]: Что было плохо
+                    - paragraph [ref=e810]: "-"
+            - listitem [ref=e811]:
+              - generic [ref=e813]:
+                - generic [ref=e814]:
+                  - generic [ref=e816]: Roman
+                  - paragraph [ref=e819]: отдых, семья
+                  - paragraph [ref=e820]: август 2024 г.
+                  - paragraph [ref=e821]: Коттедж с красивым видом из окна (питание для детей не включено), 5 ночей
+                - generic [ref=e822]:
+                  - generic [ref=e824]:
+                    - button "10" [ref=e826]:
+                      - img [ref=e827]
+                      - generic [ref=e829]: "10"
+                    - paragraph [ref=e830]: Превосходно
+                    - button "Раскрыть детали" [ref=e831] [cursor=pointer]
+                  - generic [ref=e832]:
+                    - paragraph [ref=e833]: Что было хорошо
+                    - paragraph [ref=e835]: отличный гостевой дом, уютно, тихо и спокойно, море недалеко 5-10 минут ходьбы.
+                    - paragraph [ref=e836]: Что было плохо
+                    - paragraph [ref=e838]: "-"
+                  - generic [ref=e839]:
+                    - button "Скрыть ответ гостевого дома" [ref=e841] [cursor=pointer]:
+                      - img [ref=e842]
+                      - text: Скрыть ответ гостевого дома
+                    - generic [ref=e844]:
+                      - paragraph [ref=e845]: Роман ,благодарим за ваш отзыв.
+                      - paragraph [ref=e846]: С уважением отдел бронирование Сеть Отелей Маруся
+            - listitem [ref=e847]:
+              - generic [ref=e849]:
+                - generic [ref=e850]:
+                  - generic [ref=e852]: Aleksandr
+                  - paragraph [ref=e855]: отдых, в одиночку
+                  - paragraph [ref=e856]: февраль 2026 г.
+                  - paragraph [ref=e857]: Люкс Deluxe, 1 ночь
+                - generic [ref=e859]:
+                  - generic [ref=e860]:
+                    - button "10" [ref=e862]:
+                      - img [ref=e863]
+                      - generic [ref=e865]: "10"
+                    - paragraph [ref=e866]: Превосходно
+                  - list [ref=e867]:
+                    - listitem [ref=e868]:
+                      - generic [ref=e871]:
+                        - paragraph [ref=e872]: Чистота
+                        - paragraph [ref=e873]: "10"
+                    - listitem [ref=e874]:
+                      - generic [ref=e877]:
+                        - paragraph [ref=e878]: Расположение
+                        - paragraph [ref=e879]: "10"
+                    - listitem [ref=e880]:
+                      - generic [ref=e883]:
+                        - paragraph [ref=e884]: Цена/Качество
+                        - paragraph [ref=e885]: "10"
+                    - listitem [ref=e886]:
+                      - generic [ref=e889]:
+                        - paragraph [ref=e890]: Обслуживание
+                        - paragraph [ref=e891]: "10"
+                    - listitem [ref=e892]:
+                      - generic [ref=e895]:
+                        - paragraph [ref=e896]: Номер
+                        - paragraph [ref=e897]: "10"
+                    - listitem [ref=e898]:
+                      - generic [ref=e901]:
+                        - paragraph [ref=e902]: Питание
+                        - paragraph [ref=e903]: "10"
+            - listitem [ref=e905]:
+              - generic [ref=e907]:
+                - generic [ref=e908]:
+                  - generic [ref=e910]: Alla
+                  - paragraph [ref=e913]: отдых, в одиночку
+                  - paragraph [ref=e914]: август 2025 г.
+                  - paragraph [ref=e915]: Двухместный номер Standard (двуспальная кровать), 3 ночи
+                - generic [ref=e916]:
+                  - generic [ref=e918]:
+                    - button "7,6" [ref=e920]:
+                      - img [ref=e921]
+                      - generic [ref=e923]: 7,6
+                    - paragraph [ref=e924]: Очень хорошо
+                    - button "Раскрыть детали" [ref=e925] [cursor=pointer]
+                  - generic [ref=e926]:
+                    - paragraph [ref=e927]: Что было хорошо
+                    - generic [ref=e928]:
+                      - paragraph [ref=e929]: Чистота и в номере и на кухне, свежее белье , полностью заслуга работницы, которая чистит, гладит, убирает не переставая круглыми сутками. Это основной и очень большой плюс, все плюсы из отзыва именно о ней. общая кухня на 2 этаже, много посуды, всё везде чисто. территория также чистая, есть двор, были пары с детьми. красивая зона пляжа. недалеко есть магнит и много всяких забегаловок.
+                      - paragraph [ref=e930]: врятли бы остановилась во второй раз, была возможность продл
+                  - button "Развернуть отзыв" [ref=e933] [cursor=pointer]:
+                    - img [ref=e934]
+                    - text: Развернуть отзыв
+                  - generic [ref=e936]:
+                    - paragraph [ref=e937]: Фотографии от гостя
+                    - generic [ref=e938]:
+                      - list [ref=e939]:
+                        - button "https://cdn.worldota.net/t/100x100/hotel_review/c5/62/c562249cc5841c33eadb5a379da34dd4b2018526.JPEG" [ref=e940] [cursor=pointer]:
+                          - img "https://cdn.worldota.net/t/100x100/hotel_review/c5/62/c562249cc5841c33eadb5a379da34dd4b2018526.JPEG" [ref=e942]
+                      - button "Все фото" [ref=e943] [cursor=pointer]:
+                        - generic [ref=e944]: Все фото
+            - listitem [ref=e945]:
+              - generic [ref=e947]:
+                - generic [ref=e948]:
+                  - generic [ref=e950]: Alisher
+                  - paragraph [ref=e953]: рабочая поездка, компания
+                  - paragraph [ref=e954]: сентябрь 2024 г.
+                  - paragraph [ref=e955]: Номер Standard, 2 ночи
+                - generic [ref=e957]:
+                  - generic [ref=e958]:
+                    - button "9,6" [ref=e960]:
+                      - img [ref=e961]
+                      - generic [ref=e963]: 9,6
+                    - paragraph [ref=e964]: Превосходно
+                  - generic [ref=e965]:
+                    - generic [ref=e966]:
+                      - generic [ref=e967]: "Оценка WI-FI:"
+                      - generic [ref=e968]: быстрый, никаких проблем
+                    - generic [ref=e969]:
+                      - generic [ref=e970]: "Гигиенический набор:"
+                      - generic [ref=e971]: неплохой набор
+                  - list [ref=e972]:
+                    - listitem [ref=e973]:
+                      - generic [ref=e976]:
+                        - paragraph [ref=e977]: Чистота
+                        - paragraph [ref=e978]: "10"
+                    - listitem [ref=e979]:
+                      - generic [ref=e982]:
+                        - paragraph [ref=e983]: Расположение
+                        - paragraph [ref=e984]: "10"
+                    - listitem [ref=e985]:
+                      - paragraph [ref=e988]: Цена/Качество
+                    - listitem [ref=e989]:
+                      - generic [ref=e992]:
+                        - paragraph [ref=e993]: Обслуживание
+                        - paragraph [ref=e994]: "10"
+                    - listitem [ref=e995]:
+                      - generic [ref=e998]:
+                        - paragraph [ref=e999]: Номер
+                        - paragraph [ref=e1000]: "10"
+                    - listitem [ref=e1001]:
+                      - paragraph [ref=e1004]: Питание
+            - listitem [ref=e1006]:
+              - generic [ref=e1008]:
+                - generic [ref=e1009]:
+                  - generic [ref=e1011]: Svetlana
+                  - paragraph [ref=e1014]: отдых, компания
+                  - paragraph [ref=e1015]: март 2026 г.
+                  - paragraph [ref=e1016]: Двухместный номер Standard (2 отдельные кровати), 10 ночей
+                - generic [ref=e1017]:
+                  - generic [ref=e1018]:
+                    - generic [ref=e1019]:
+                      - button "8,5" [ref=e1021]:
+                        - img [ref=e1022]
+                        - generic [ref=e1024]: 8,5
+                      - paragraph [ref=e1025]: Отлично
+                      - button "Раскрыть детали" [ref=e1026] [cursor=pointer]
+                    - generic [ref=e1028]:
+                      - generic [ref=e1029]: "Оценка WI-FI:"
+                      - generic [ref=e1030]: wi-fi в отеле не оказалось
+                  - generic [ref=e1031]:
+                    - paragraph [ref=e1032]: Что было хорошо
+                    - paragraph [ref=e1034]: Место расположения ,чисто, море рядом и магазины,кухня большая,кулер есть,все+
+                    - paragraph [ref=e1035]: Что было плохо
+                    - paragraph [ref=e1037]: Вентиляции нет в душе
+            - listitem [ref=e1038]:
+              - generic [ref=e1040]:
+                - generic [ref=e1041]:
+                  - generic [ref=e1043]: Olga
+                  - paragraph [ref=e1046]: рабочая поездка, пара
+                  - paragraph [ref=e1047]: август 2025 г.
+                  - paragraph [ref=e1048]: Двухместный номер Superior (двуспальная кровать) (кровать king size, + диван), 1 ночь
+                - generic [ref=e1049]:
+                  - generic [ref=e1050]:
+                    - generic [ref=e1051]:
+                      - button "8,4" [ref=e1053]:
+                        - img [ref=e1054]
+                        - generic [ref=e1056]: 8,4
+                      - paragraph [ref=e1057]: Отлично
+                      - button "Раскрыть детали" [ref=e1058] [cursor=pointer]
+                    - generic [ref=e1059]:
+                      - generic [ref=e1060]:
+                        - generic [ref=e1061]: "Оценка WI-FI:"
+                        - generic [ref=e1062]: работал с перебоями
+                      - generic [ref=e1063]:
+                        - generic [ref=e1064]: "Гигиенический набор:"
+                        - generic [ref=e1065]: неплохой набор
+                  - generic [ref=e1066]:
+                    - paragraph [ref=e1067]: Что было хорошо
+                    - paragraph [ref=e1069]: соотношения цена/качество. Сутки за 1500 руб бронировала, за эти деньги очень чисто, постель проглажена, полотенец достаточное количество, Люди приветливые
+            - listitem [ref=e1070]:
+              - generic [ref=e1072]:
+                - generic [ref=e1073]:
+                  - generic [ref=e1075]: Alexey
+                  - paragraph [ref=e1078]: отдых, семья
+                  - paragraph [ref=e1079]: июнь 2025 г.
+                  - paragraph [ref=e1080]: Люкс Deluxe, 4 ночи
+                - generic [ref=e1081]:
+                  - generic [ref=e1083]:
+                    - button "8,8" [ref=e1085]:
+                      - img [ref=e1086]
+                      - generic [ref=e1088]: 8,8
+                    - paragraph [ref=e1089]: Отлично
+                    - button "Раскрыть детали" [ref=e1090] [cursor=pointer]
+                  - generic [ref=e1091]:
+                    - paragraph [ref=e1092]: Что было хорошо
+                    - paragraph [ref=e1094]: Сответствует реальным описаниям
+                    - paragraph [ref=e1095]: Что было плохо
+                    - paragraph [ref=e1097]: В номере небыло пароля от wi-fi
+            - listitem [ref=e1098]:
+              - generic [ref=e1100]:
+                - generic [ref=e1101]:
+                  - generic [ref=e1103]: Maksim
+                  - paragraph [ref=e1106]: отдых, семья
+                  - paragraph [ref=e1107]: январь 2025 г.
+                  - paragraph [ref=e1108]: Полулюкс с 2 комнатами с красивым видом из окна, 10 ночей
+                - generic [ref=e1109]:
+                  - generic [ref=e1110]:
+                    - generic [ref=e1111]:
+                      - button "7,5" [ref=e1113]:
+                        - img [ref=e1114]
+                        - generic [ref=e1116]: 7,5
+                      - paragraph [ref=e1117]: Очень хорошо
+                      - button "Раскрыть детали" [ref=e1118] [cursor=pointer]
+                    - generic [ref=e1120]:
+                      - generic [ref=e1121]: "Оценка WI-FI:"
+                      - generic [ref=e1122]: был постоянно, но медленный
+                  - generic [ref=e1123]:
+                    - paragraph [ref=e1124]: Что было хорошо
+                    - paragraph [ref=e1126]: Отличное сочетание цены и качества. Недалеко идти до моря, магазины продуктовые рядом. Встречает добрая женщина хозяйка, всегда помогала и подсказывала
+                    - paragraph [ref=e1127]: Что было плохо
+                    - paragraph [ref=e1129]: "Из минусов: во второй комнате нужен хотя бы вентилятор, а лучше кондиционер. На территории можно добавить развлечения для детей - бассейн надувной, игрушки и тд. Тем более на фото это было"
+          - generic [ref=e1130]:
+            - button "Следующая страница" [ref=e1131] [cursor=pointer]:
+              - generic [ref=e1132]: Следующая страница
+            - generic [ref=e1133]:
+              - button [ref=e1134]:
+                - img [ref=e1135]
+              - generic [ref=e1137]:
+                - button "1" [ref=e1138]
+                - button "2" [ref=e1139] [cursor=pointer]
+              - button [ref=e1140] [cursor=pointer]:
+                - img [ref=e1141]
+    - generic [ref=e1144]:
+      - button "Часто задаваемые вопросы" [ref=e1145] [cursor=pointer]:
+        - heading "Часто задаваемые вопросы" [level=2] [ref=e1146]
+        - img [ref=e1147]
+      - generic [ref=e1149]:
+        - generic [ref=e1150]:
+          - button "Сколько стоит проживание в гостевом доме Гостевой дом Маруся на Александровском?" [ref=e1151] [cursor=pointer]:
+            - img [ref=e1153]
+            - heading "Сколько стоит проживание в гостевом доме Гостевой дом Маруся на Александровском?" [level=3] [ref=e1155]
+          - paragraph [ref=e1157]: Минимальная цена за одну ночь в гостевом доме составляет 4 044 ₽.
+        - generic [ref=e1158]:
+          - button "В какое время заезд и выезд в гостевой дом?" [ref=e1159] [cursor=pointer]:
+            - img [ref=e1161]
+            - heading "В какое время заезд и выезд в гостевой дом?" [level=3] [ref=e1163]
+          - paragraph [ref=e1165]: Заезд возможен с 14:00, а выезд необходимо осуществить до 12:00.
+        - generic [ref=e1166]:
+          - button "Как оплатить проживание в гостевом доме?" [ref=e1167] [cursor=pointer]:
+            - img [ref=e1169]
+            - heading "Как оплатить проживание в гостевом доме?" [level=3] [ref=e1171]
+          - paragraph [ref=e1173]: Вы можете расплатиться наличными в RUB, также доступна оплата банковской картой. Для некоторых тарифов доступна онлайн-оплата при бронировании на сайте.
+    - generic [ref=e1175]:
+      - generic [ref=e1176]:
+        - generic [ref=e1177]:
+          - link "logo" [ref=e1178] [cursor=pointer]:
+            - /url: /
+            - img "logo" [ref=e1179]
+          - generic [ref=e1184]:
+            - link "AppStore" [ref=e1185] [cursor=pointer]:
+              - /url: https://ostrvk.onelink.me/czYD/?af_web_dp=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fostrovok-book-a-hotel%2Fid564204730&pid=brand&af_channel=installs_from_site&c=footer&af_siteid=ostrovok&af_sub_siteid=hp&deep_link_value=ostrovok%3A%2F%2Fhp%3Fsite_uid%3DE5DBF44D65F0D369A8328E6C02CD6D12%26hotel_id%3Dmarusya_on_alexandrovsky_guest_house%26hotel_name%3D%25D0%2593%25D0%25BE%25D1%2581%25D1%2582%25D0%25B5%25D0%25B2%25D0%25BE%25D0%25B9%2520%25D0%25B4%25D0%25BE%25D0%25BC%2520%25D0%259C%25D0%25B0%25D1%2580%25D1%2583%25D1%2581%25D1%258F%2520%25D0%25BD%25D0%25B0%2520%25D0%2590%25D0%25BB%25D0%25B5%25D0%25BA%25D1%2581%25D0%25B0%25D0%25BD%25D0%25B4%25D1%2580%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25BE%25D0%25BC%26region_name%3D%25D0%25A1%25D0%25BE%25D1%2587%25D0%25B8%26currency%3DRUB%26utm_campaign%3Dfooter%26utm_medium%3Dhp%26utm_source%3Dostrovok
+              - img "AppStore" [ref=e1186]
+            - link "GooglePlay" [ref=e1187] [cursor=pointer]:
+              - /url: https://ostrvk.onelink.me/czYD/?af_web_dp=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dru.ostrovok.android&pid=brand&af_channel=installs_from_site&c=footer&af_siteid=ostrovok&af_sub_siteid=hp&deep_link_value=ostrovok%3A%2F%2Fhp%3Fsite_uid%3DE5DBF44D65F0D369A8328E6C02CD6D12%26hotel_id%3Dmarusya_on_alexandrovsky_guest_house%26hotel_name%3D%25D0%2593%25D0%25BE%25D1%2581%25D1%2582%25D0%25B5%25D0%25B2%25D0%25BE%25D0%25B9%2520%25D0%25B4%25D0%25BE%25D0%25BC%2520%25D0%259C%25D0%25B0%25D1%2580%25D1%2583%25D1%2581%25D1%258F%2520%25D0%25BD%25D0%25B0%2520%25D0%2590%25D0%25BB%25D0%25B5%25D0%25BA%25D1%2581%25D0%25B0%25D0%25BD%25D0%25B4%25D1%2580%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25BE%25D0%25BC%26region_name%3D%25D0%25A1%25D0%25BE%25D1%2587%25D0%25B8%26currency%3DRUB%26utm_campaign%3Dfooter%26utm_medium%3Dhp%26utm_source%3Dostrovok
+              - img "GooglePlay" [ref=e1188]
+            - link "Huawei AppGallery" [ref=e1189] [cursor=pointer]:
+              - /url: https://appgallery.huawei.com/#/app/C102822437
+              - img "Huawei AppGallery" [ref=e1190]
+        - generic [ref=e1191]:
+          - generic [ref=e1192]:
+            - paragraph [ref=e1193]: Компания
+            - list [ref=e1194]:
+              - listitem [ref=e1195]:
+                - link "Компания и команда" [ref=e1196] [cursor=pointer]:
+                  - /url: https://career.ostrovok.ru/?utm_source=footer_header
+              - listitem [ref=e1197]:
+                - link "Контакты" [ref=e1198] [cursor=pointer]:
+                  - /url: /about/contacts/
+              - listitem [ref=e1199]:
+                - link "Вакансии" [ref=e1200] [cursor=pointer]:
+                  - /url: https://career.ostrovok.ru/vacancy/?utm_source=main_page_footer
+              - listitem [ref=e1201]:
+                - link "Для прессы" [ref=e1202] [cursor=pointer]:
+                  - /url: /about/press/
+          - generic [ref=e1203]:
+            - paragraph [ref=e1204]: Клиентам
+            - list [ref=e1205]:
+              - listitem [ref=e1206]:
+                - link "База знаний" [ref=e1207] [cursor=pointer]:
+                  - /url: https://help.ostrovok.ru/ru
+              - listitem [ref=e1208]:
+                - link "Служба поддержки" [ref=e1209] [cursor=pointer]:
+                  - /url: /feedback/
+              - listitem [ref=e1210]:
+                - link "Блог о путешествиях" [ref=e1211] [cursor=pointer]:
+                  - /url: https://blog.ostrovok.ru/?ref=footer
+              - listitem [ref=e1212]:
+                - link "Популярные направления" [ref=e1213] [cursor=pointer]:
+                  - /url: /hotel/
+              - listitem [ref=e1214]:
+                - link "Юридическая информация" [ref=e1215] [cursor=pointer]:
+                  - /url: /about/legal/
+              - listitem [ref=e1216]:
+                - link "Правила бронирования" [ref=e1217] [cursor=pointer]:
+                  - /url: https://ostrovok.ru/legal/order/agreement/bg/10/
+              - listitem [ref=e1218]:
+                - link "Программа лояльности GURU" [ref=e1219] [cursor=pointer]:
+                  - /url: https://ostrovok.ru/about/guru/
+          - generic [ref=e1220]:
+            - paragraph [ref=e1221]: Партнёрам
+            - list [ref=e1222]:
+              - listitem [ref=e1223]:
+                - link "Объектам размещения" [ref=e1224] [cursor=pointer]:
+                  - /url: https://extranet.ostrovok.ru/?utm_medium=link&utm_source=ostrovok&utm_campaign=signup&utm_content=partnership
+              - listitem [ref=e1225]:
+                - link "Турагентствам" [ref=e1226] [cursor=pointer]:
+                  - /url: https://b2b.ostrovok.ru/
+              - listitem [ref=e1227]:
+                - link "Корпоративным клиентам" [ref=e1228] [cursor=pointer]:
+                  - /url: https://b2b.ostrovok.ru/travel/corp_product/
+              - listitem [ref=e1229]:
+                - link "Поиск отелей на вашем сайте" [ref=e1230] [cursor=pointer]:
+                  - /url: https://b2b.ostrovok.ru/
+              - listitem [ref=e1231]:
+                - link "Рекламодателям" [ref=e1232] [cursor=pointer]:
+                  - /url: /adv/
+              - listitem [ref=e1233]:
+                - link "Реклама и PR" [ref=e1234] [cursor=pointer]:
+                  - /url: https://ostrovok.ru/adv/
+          - generic [ref=e1236]:
+            - link "Telegram" [ref=e1237] [cursor=pointer]:
+              - /url: https://t.me/ostrovok_travel
+              - img "Telegram" [ref=e1238]
+            - link "Dzen" [ref=e1239] [cursor=pointer]:
+              - /url: https://dzen.ru/blog_ostrovok_ru
+              - img "Dzen" [ref=e1240]
+            - link "VK" [ref=e1241] [cursor=pointer]:
+              - /url: https://vk.com/ostrovok_ru
+              - img "VK" [ref=e1242]
+            - link "OK" [ref=e1243] [cursor=pointer]:
+              - /url: https://ok.ru/ostrovok.ru/
+              - img "OK" [ref=e1244]
+      - generic [ref=e1247]:
+        - paragraph [ref=e1248]: Безопасность платежей
+        - paragraph [ref=e1249]: Надёжная защита данных от ведущих платёжных систем.
+      - generic [ref=e1257]:
+        - link "Политика хранения и обработки персональных данных" [ref=e1258] [cursor=pointer]:
+          - /url: /legal/site/privacy-policy/
+        - link "Применяются рекомендательные технологии" [ref=e1259] [cursor=pointer]:
+          - /url: /legal/site/recommendation_technologies/
+  - alert [ref=e1260]: Гостевой дом Маруся на Александровском в Сочи 15 отзывов об отеле, цены и фото номеров - забронировать гостиницу Гостевой дом Маруся на Александровском онлайн
+  - iframe [ref=e1261]:
+    
+  - iframe

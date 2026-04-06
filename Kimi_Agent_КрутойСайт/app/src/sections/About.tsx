@@ -18,7 +18,7 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-2xl">
               <img
-                src="/about-interior.jpg"
+                src="https://images.unsplash.com/photo-1616594039964-40891a909d99?w=1200&q=80"
                 alt="Интерьер гостевого дома"
                 className="h-full w-full object-cover"
                 loading="lazy"
@@ -34,7 +34,7 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="mb-4 inline-block text-sm uppercase tracking-widest text-sand"
+              className="mb-4 inline-block text-base uppercase tracking-widest text-sand"
             >
               О нас
             </motion.span>
@@ -43,7 +43,7 @@ export function About() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 }}
-              className="font-display mb-6 text-4xl text-charcoal lg:text-5xl"
+              className="font-display mb-6 text-5xl text-charcoal lg:text-6xl"
             >
               Дом, где вас ждут
             </motion.h2>
@@ -52,7 +52,7 @@ export function About() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4 }}
-              className="mb-6 text-lg leading-relaxed text-warm-gray"
+              className="mb-6 text-xl leading-relaxed text-warm-gray"
             >
               Маруся — это не просто гостевой дом. Это место, где тёплое гостеприимство 
               встречается с южным солнцем Кудепсты. Мы создали уголок, где можно забыть 

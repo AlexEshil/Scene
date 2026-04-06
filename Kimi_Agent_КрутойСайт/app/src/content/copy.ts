@@ -1,5 +1,44 @@
 // SECTION: copy.ts — All website content in one place
 
+// REAL photos from Marusya guesthouse (Ostrovok.ru)
+const localPhotos = {
+  // Rooms - REAL photos from the guesthouse
+  roomStandard: '/photos/room1.jpg',
+  roomStandardAlt: '/photos/room3.jpg',
+  roomFamily: '/photos/room8.jpg',
+  roomFamilyAlt: '/photos/room9.jpg',
+  roomTriple: '/photos/room4.jpg',
+  roomTripleAlt: '/photos/room5.jpg',
+  
+  // Gallery - all real room photos
+  gallery: [
+    '/photos/room1.jpg',
+    '/photos/room2.jpg',
+    '/photos/room3.jpg',
+    '/photos/room4.jpg',
+    '/photos/room8.jpg',
+    '/photos/room9.jpg',
+    '/photos/room10.jpg',
+    '/photos/room11.jpg',
+    '/photos/room12.jpg',
+    '/photos/room13.jpg',
+    '/photos/room15.jpg',
+  ],
+};
+
+// Unsplash only for scenes we don't have real photos of
+const unsplash = {
+  // Hero - Sochi Black Sea sunset
+  heroPoster: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80',
+  
+  // Story moments - generic scenes (we don't have these photos from guesthouse)
+  sunrise: 'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80',
+  breakfast: 'https://images.unsplash.com/photo-1533089862017-5614ecb352ae?w=1200&q=80',
+  beach: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80',
+  lunch: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80',
+  sunset: 'https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=1200&q=80',
+};
+
 export const siteConfig = {
   name: 'Маруся',
   tagline: 'Гостевой дом в Кудепсте',
@@ -32,7 +71,7 @@ export const heroCopy = {
   video: {
     mp4: '/videos/hero-sea.mp4',
     webm: '/videos/hero-sea.webm',
-    poster: '/hero-courtyard.jpg',
+    poster: unsplash.heroPoster,
   },
 };
 
@@ -43,39 +82,39 @@ export const storyMoments = [
     time: '06:30',
     title: 'Рассвет',
     copy: 'Просыпайтесь под пение птиц в тихом дворе. Утренний свет проникает сквозь шторы, а воздух пахнет соснами и морем.',
-    image: '/story/sunrise.jpg',
+    image: unsplash.sunrise,
   },
   {
     id: 'breakfast',
     time: '09:00',
     title: 'Завтрак',
     copy: 'Домашний хачапури, свежие овощи с рынка, душистый чай. Мама готовит с любовью, как для своей семьи.',
-    image: '/story/breakfast.jpg',
+    image: unsplash.breakfast,
   },
   {
     id: 'beach',
     time: '11:00',
     title: 'Пляж',
     copy: 'Десять минут неторопливой прогулки — и вы на море. Чистый галечный пляж Кудепсты, без толп туристов.',
-    image: '/story/beach.jpg',
+    image: unsplash.beach,
   },
   {
     id: 'lunch',
     time: '14:00',
     title: 'Обед',
     copy: 'Лёгкий перекус на террасе. Домашнее вино, сыры, оливки. Перерыв между купаниями.',
-    image: '/story/lunch.jpg',
+    image: unsplash.lunch,
   },
   {
     id: 'sunset',
     time: '19:30',
     title: 'Закат',
     copy: 'Вечерний воздух становится прохладным. Зажигаем огни, разжигаем мангал, делимся историями за бокалом вина.',
-    image: '/story/sunset.jpg',
+    image: unsplash.sunset,
   },
 ];
 
-// Rooms Section
+// Rooms Section - with REAL photos from the guesthouse
 export const roomsCopy = {
   title: 'Номера',
   subtitle: 'Три уникальных пространства для вашего отдыха',
@@ -88,10 +127,10 @@ export const roomsCopy = {
       guests: 2,
       beds: 'Двуспальная кровать',
       price: 2500,
-      image: '/room-standard.jpg',
+      image: localPhotos.roomStandard,
       description: 'Уютный номер для двоих с всем необходимым для комфортного отдыха. Идеально для пар.',
       amenities: ['Кондиционер', 'Холодильник', 'TV', 'Wi-Fi', 'Душ', 'Фен', 'Полотенца'],
-      panorama: '/panorama/room-standard-pano.jpg',
+      panorama: localPhotos.roomStandardAlt,
       availability: 3,
     },
     {
@@ -102,10 +141,10 @@ export const roomsCopy = {
       guests: 4,
       beds: '2 двуспальные кровати',
       price: 4000,
-      image: '/room-cottage.jpg',
+      image: localPhotos.roomFamily,
       description: 'Просторный номер для семьи или компании друзей. Отдельная гостиная и спальня.',
       amenities: ['Кондиционер', 'Кухня', 'Холодильник', 'TV', 'Wi-Fi', 'Душ', 'Фен', 'Полотенца'],
-      panorama: '/panorama/room-family-pano.jpg',
+      panorama: localPhotos.roomFamilyAlt,
       availability: 1,
     },
     {
@@ -116,10 +155,10 @@ export const roomsCopy = {
       guests: 3,
       beds: '3 односпальные кровати',
       price: 3200,
-      image: '/room-comfort.jpg',
-      description: 'Для компании друзей или семьи с ребёнком. Три отдельные кровати, всё удобства.',
+      image: localPhotos.roomTriple,
+      description: 'Для компании друзей или семьи с ребёнком. Три отдельные кровати, все удобства.',
       amenities: ['Кондиционер', 'Холодильник', 'TV', 'Wi-Fi', 'Душ', 'Фен', 'Полотенца'],
-      panorama: '/panorama/room-triple-pano.jpg',
+      panorama: localPhotos.roomTripleAlt,
       availability: 2,
     },
   ],
@@ -242,7 +281,7 @@ export const reviewsCopy = {
       city: 'Пермь',
       type: 'couple',
       rating: 5,
-      text: 'Хороший соотношение цена-качество. Всё соответствует описанию. Рекомендуем!',
+      text: 'Хорошее соотношение цена-качество. Всё соответствует описанию. Рекомендуем!',
       date: '2024-06-15',
       platform: 'google',
     },
@@ -331,6 +370,16 @@ export const featuresCopy = {
     { icon: 'car', title: 'Парковка', description: 'Бесплатно на территории' },
     { icon: 'flame', title: 'Мангальная зона', description: 'Для вечерних посиделок' },
   ],
+};
+
+// Gallery Section - REAL photos from guesthouse
+export const galleryCopy = {
+  title: 'Галерея',
+  subtitle: 'Настоящие фото наших номеров',
+  images: localPhotos.gallery.map((src, index) => ({
+    src,
+    alt: `Номер ${index + 1}`,
+  })),
 };
 
 // WhatsApp Flow

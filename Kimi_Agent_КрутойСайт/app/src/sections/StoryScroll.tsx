@@ -41,7 +41,7 @@ export function StoryScroll() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="relative overflow-hidden rounded-2xl"
               >
-                <div className="aspect-[4/3] w-full">
+                <div className="aspect-[16/10] w-full">
                   <img
                     src={moment.image}
                     alt={moment.title}
@@ -55,8 +55,8 @@ export function StoryScroll() {
                   <span className="mb-2 inline-block font-display text-5xl text-white/30">
                     {moment.time}
                   </span>
-                  <h3 className="font-display mb-2 text-2xl text-white">{moment.title}</h3>
-                  <p className="font-display text-lg italic text-white/80">{moment.copy}</p>
+                  <h3 className="font-display mb-2 text-3xl text-white">{moment.title}</h3>
+                  <p className="font-display text-xl italic text-white/80 leading-relaxed">{moment.copy}</p>
                 </div>
               </motion.div>
             ))}
@@ -99,7 +99,7 @@ export function StoryScroll() {
             >
               <div className="grid max-w-6xl grid-cols-2 gap-12 items-center">
                 {/* Image */}
-                <div className={`relative aspect-[4/3] overflow-hidden rounded-2xl ${index % 2 === 1 ? 'order-2' : ''}`}>
+                <div className={`relative aspect-[16/10] overflow-hidden rounded-2xl ${index % 2 === 1 ? 'order-2' : ''}`}>
                   <img
                     src={moment.image}
                     alt={moment.title}
@@ -113,8 +113,8 @@ export function StoryScroll() {
                   <span className="font-display mb-4 block text-8xl text-charcoal/10">
                     {moment.time}
                   </span>
-                  <h3 className="font-display mb-4 text-4xl text-charcoal">{moment.title}</h3>
-                  <p className="font-display text-xl italic text-warm-gray">{moment.copy}</p>
+                  <h3 className="font-display mb-4 text-5xl text-charcoal">{moment.title}</h3>
+                  <p className="font-display text-2xl italic text-warm-gray leading-relaxed">{moment.copy}</p>
                 </div>
               </div>
             </div>

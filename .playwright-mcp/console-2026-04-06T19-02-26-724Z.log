@@ -1,0 +1,2 @@
+[     339ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:3000/videos/hero-sea.webm:0
+[     546ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:3000/videos/hero-sea.mp4:0

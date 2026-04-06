@@ -1,0 +1,684 @@
+- generic [ref=e3]:
+  - region "Notifications alt+T"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Маруся" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - navigation [ref=e7]:
+        - button "О нас" [ref=e8] [cursor=pointer]
+        - button "Номера" [ref=e9] [cursor=pointer]
+        - button "Галерея" [ref=e10] [cursor=pointer]
+        - button "Отзывы" [ref=e11] [cursor=pointer]
+        - button "Контакты" [ref=e12] [cursor=pointer]
+      - generic [ref=e13]:
+        - link "+7 (962) 888-88-88" [ref=e14] [cursor=pointer]:
+          - /url: tel:+7 (962) 888-88-88
+          - img [ref=e15]
+          - text: +7 (962) 888-88-88
+        - button "Забронировать" [ref=e17] [cursor=pointer]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - img "Вид на море" [ref=e858]
+      - generic [ref=e23]:
+        - generic [ref=e25]:
+          - img [ref=e26]
+          - text: Кудепста, 10 минут до моря
+        - heading "М а р у с я" [level=1] [ref=e29]:
+          - generic [ref=e30]: М
+          - generic [ref=e31]: а
+          - generic [ref=e32]: р
+          - generic [ref=e33]: у
+          - generic [ref=e34]: с
+          - generic [ref=e35]: я
+        - paragraph [ref=e36]: Место, куда хочется возвращаться
+        - paragraph [ref=e37]: Уютные номера, тёплая атмосфера и забота о каждом госте. Идеально для семейного отдыха у самого моря.
+        - generic [ref=e38]:
+          - button "Забронировать" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+            - text: Забронировать
+          - button "Смотреть номера" [ref=e42] [cursor=pointer]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: "4.9"
+            - paragraph [ref=e46]: рейтинг
+          - generic [ref=e47]:
+            - paragraph [ref=e48]: 120+
+            - paragraph [ref=e49]: отзывов
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: 10 мин
+            - paragraph [ref=e52]: до моря
+      - button "Scroll down" [ref=e53] [cursor=pointer]:
+        - img [ref=e55]
+    - generic [ref=e58]:
+      - heading "Ваш день в Марусе" [level=2] [ref=e60]
+      - generic [ref=e63]:
+        - generic [ref=e65]:
+          - img "Рассвет" [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]: 06:30
+            - heading "Рассвет" [level=3] [ref=e70]
+            - paragraph [ref=e71]: Просыпайтесь под пение птиц в тихом дворе. Утренний свет проникает сквозь шторы, а воздух пахнет соснами и морем.
+        - generic [ref=e73]:
+          - img "Завтрак" [ref=e75]
+          - generic [ref=e76]:
+            - generic [ref=e77]: 09:00
+            - heading "Завтрак" [level=3] [ref=e78]
+            - paragraph [ref=e79]: Домашний хачапури, свежие овощи с рынка, душистый чай. Мама готовит с любовью, как для своей семьи.
+        - generic [ref=e81]:
+          - img "Пляж" [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e85]: 11:00
+            - heading "Пляж" [level=3] [ref=e86]
+            - paragraph [ref=e87]: Десять минут неторопливой прогулки — и вы на море. Чистый галечный пляж Кудепсты, без толп туристов.
+        - generic [ref=e89]:
+          - img "Обед" [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]: 14:00
+            - heading "Обед" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Лёгкий перекус на террасе. Домашнее вино, сыры, оливки. Перерыв между купаниями.
+        - generic [ref=e97]:
+          - img "Закат" [ref=e99]
+          - generic [ref=e100]:
+            - generic [ref=e101]: 19:30
+            - heading "Закат" [level=3] [ref=e102]
+            - paragraph [ref=e103]: Вечерний воздух становится прохладным. Зажигаем огни, разжигаем мангал, делимся историями за бокалом вина.
+    - generic [ref=e106]:
+      - img "Интерьер гостевого дома" [ref=e109]
+      - generic [ref=e111]:
+        - generic [ref=e112]: О нас
+        - heading "Дом, где вас ждут" [level=2] [ref=e113]
+        - paragraph [ref=e114]: Маруся — это не просто гостевой дом. Это место, где тёплое гостеприимство встречается с южным солнцем Кудепсты. Мы создали уголок, где можно забыть о суете и по-настоящему отдохнуть.
+        - paragraph [ref=e115]: Чистота, уют и внимание к деталям — то, что гости отмечают снова и снова. Здесь не просто останавливаются — сюда возвращаются.
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: ✦
+            - text: 10 минут до моря
+          - generic [ref=e119]:
+            - generic [ref=e120]: ✦
+            - text: Семейный отдых
+          - generic [ref=e121]:
+            - generic [ref=e122]: ✦
+            - text: Завтраки включены
+    - generic [ref=e124]:
+      - heading "Почему выбирают нас" [level=2] [ref=e126]
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]: 0 мин
+          - paragraph [ref=e130]: до моря
+        - generic [ref=e131]:
+          - generic [ref=e132]: "0.9"
+          - paragraph [ref=e133]: рейтинг
+        - generic [ref=e134]:
+          - generic [ref=e135]: 0+
+          - paragraph [ref=e136]: отзывов
+        - generic [ref=e137]:
+          - text: "0"
+          - paragraph [ref=e138]: лет опыта
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - img [ref=e142]
+          - heading "Море рядом" [level=3] [ref=e146]
+          - paragraph [ref=e147]: 10 минут пешком до пляжа
+        - generic [ref=e148]:
+          - img [ref=e150]
+          - heading "Вкусные завтраки" [level=3] [ref=e155]
+          - paragraph [ref=e156]: Домашняя кухня
+        - generic [ref=e157]:
+          - img [ref=e159]
+          - heading "Идеальная чистота" [level=3] [ref=e162]
+          - paragraph [ref=e163]: Отмечают все гости
+        - generic [ref=e164]:
+          - img [ref=e166]
+          - heading "Зелёный двор" [level=3] [ref=e169]
+          - paragraph [ref=e170]: Тишина и свежий воздух
+        - generic [ref=e171]:
+          - img [ref=e173]
+          - heading "Для семьи" [level=3] [ref=e178]
+          - paragraph [ref=e179]: Детская площадка и безопасность
+        - generic [ref=e180]:
+          - img [ref=e182]
+          - heading "Всё рядом" [level=3] [ref=e186]
+          - paragraph [ref=e187]: Рынок, магазины, кафе
+        - generic [ref=e188]:
+          - img [ref=e190]
+          - heading "Парковка" [level=3] [ref=e194]
+          - paragraph [ref=e195]: Бесплатно на территории
+        - generic [ref=e196]:
+          - img [ref=e198]
+          - heading "Мангальная зона" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Для вечерних посиделок
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - heading "Номера" [level=2] [ref=e204]
+        - paragraph [ref=e205]: Три уникальных пространства для вашего отдыха
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - img "Двухместный стандарт" [ref=e210]
+            - button "Виртуальный тур" [ref=e211] [cursor=pointer]:
+              - img [ref=e212]
+              - text: Виртуальный тур
+            - generic [ref=e215]: Доступно 3
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - generic [ref=e219]:
+                - img [ref=e220]
+                - text: 18 м²
+              - generic [ref=e225]:
+                - img [ref=e226]
+                - text: до 2 гостей
+            - heading "Двухместный стандарт" [level=3] [ref=e231]
+            - paragraph [ref=e232]: Уютный номер для двоих с всем необходимым для комфортного отдыха. Идеально для пар.
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - img [ref=e235]
+                - text: Кондиционер
+              - generic [ref=e239]:
+                - img [ref=e240]
+                - text: Холодильник
+              - generic [ref=e243]:
+                - img [ref=e244]
+                - text: TV
+              - generic [ref=e247]:
+                - img [ref=e248]
+                - text: Wi-Fi
+              - generic [ref=e252]:
+                - img [ref=e253]
+                - text: Душ
+              - generic [ref=e257]:
+                - img [ref=e258]
+                - text: Фен
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - paragraph [ref=e264]: от
+                - paragraph [ref=e265]: 2 500₽
+                - paragraph [ref=e266]: за ночь
+              - button "Забронировать" [ref=e267] [cursor=pointer]:
+                - img [ref=e268]
+                - text: Забронировать
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - img "Двухкомнатный семейный" [ref=e273]
+            - button "Виртуальный тур" [ref=e274] [cursor=pointer]:
+              - img [ref=e275]
+              - text: Виртуальный тур
+            - generic [ref=e278]: Остался 1 номер
+          - generic [ref=e280]:
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - img [ref=e283]
+                - text: 35 м²
+              - generic [ref=e288]:
+                - img [ref=e289]
+                - text: до 4 гостей
+            - heading "Двухкомнатный семейный" [level=3] [ref=e294]
+            - paragraph [ref=e295]: Просторный номер для семьи или компании друзей. Отдельная гостиная и спальня.
+            - generic [ref=e296]:
+              - generic [ref=e297]:
+                - img [ref=e298]
+                - text: Кондиционер
+              - generic [ref=e302]:
+                - img [ref=e303]
+                - text: Кухня
+              - generic [ref=e306]:
+                - img [ref=e307]
+                - text: Холодильник
+              - generic [ref=e310]:
+                - img [ref=e311]
+                - text: TV
+              - generic [ref=e314]:
+                - img [ref=e315]
+                - text: Wi-Fi
+              - generic [ref=e319]:
+                - img [ref=e320]
+                - text: Душ
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - paragraph [ref=e326]: от
+                - paragraph [ref=e327]: 4 000₽
+                - paragraph [ref=e328]: за ночь
+              - button "Забронировать" [ref=e329] [cursor=pointer]:
+                - img [ref=e330]
+                - text: Забронировать
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - img "Трёхместный" [ref=e335]
+            - button "Виртуальный тур" [ref=e336] [cursor=pointer]:
+              - img [ref=e337]
+              - text: Виртуальный тур
+            - generic [ref=e340]: Доступно 2
+          - generic [ref=e342]:
+            - generic [ref=e343]:
+              - generic [ref=e344]:
+                - img [ref=e345]
+                - text: 22 м²
+              - generic [ref=e350]:
+                - img [ref=e351]
+                - text: до 3 гостей
+            - heading "Трёхместный" [level=3] [ref=e356]
+            - paragraph [ref=e357]: Для компании друзей или семьи с ребёнком. Три отдельные кровати, все удобства.
+            - generic [ref=e358]:
+              - generic [ref=e359]:
+                - img [ref=e360]
+                - text: Кондиционер
+              - generic [ref=e364]:
+                - img [ref=e365]
+                - text: Холодильник
+              - generic [ref=e368]:
+                - img [ref=e369]
+                - text: TV
+              - generic [ref=e372]:
+                - img [ref=e373]
+                - text: Wi-Fi
+              - generic [ref=e377]:
+                - img [ref=e378]
+                - text: Душ
+              - generic [ref=e382]:
+                - img [ref=e383]
+                - text: Фен
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - paragraph [ref=e389]: от
+                - paragraph [ref=e390]: 3 200₽
+                - paragraph [ref=e391]: за ночь
+              - button "Забронировать" [ref=e392] [cursor=pointer]:
+                - img [ref=e393]
+                - text: Забронировать
+    - generic [ref=e396]:
+      - generic [ref=e397]:
+        - heading "Галерея" [level=2] [ref=e398]
+        - paragraph [ref=e399]: Моменты из жизни нашего дома
+      - generic [ref=e400]:
+        - img "Номер 1" [ref=e402] [cursor=pointer]
+        - img "Номер 2" [ref=e885] [cursor=pointer]
+        - img "Номер 3" [ref=e887] [cursor=pointer]
+        - img "Номер 4" [ref=e889] [cursor=pointer]
+        - img "Номер 5" [ref=e404] [cursor=pointer]
+        - generic:
+          - img "Номер 6"
+        - generic:
+          - img "Номер 7"
+        - generic:
+          - img "Номер 8"
+        - generic:
+          - img "Номер 9"
+        - generic:
+          - img "Номер 10"
+        - generic:
+          - img "Номер 11"
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - heading "Что говорят гости" [level=2] [ref=e408]
+        - paragraph [ref=e409]: Истории тех, кто уже отдохнул у нас
+      - generic [ref=e410]:
+        - button "Все" [ref=e411] [cursor=pointer]
+        - button "Семьи" [ref=e412] [cursor=pointer]
+        - button "Пары" [ref=e413] [cursor=pointer]
+        - button "Соло" [ref=e414] [cursor=pointer]
+      - generic [ref=e415]:
+        - generic [ref=e416]:
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - generic [ref=e419]: NM
+              - generic [ref=e420]:
+                - paragraph [ref=e421]: Nata Marchenko
+                - paragraph [ref=e422]: Москва
+            - generic [ref=e423]: Booking.com
+          - generic [ref=e424]:
+            - img [ref=e425]
+            - img [ref=e427]
+            - img [ref=e429]
+            - img [ref=e431]
+            - img [ref=e433]
+            - generic [ref=e435]: family
+          - paragraph [ref=e436]: Очень приятная гостиница. Жили в двухкомнатном номере на первом этаже. Чистота почти идеальная. Полное соответствие фотографиям. Удобные кровати, за окном сад и всё время поют птички.
+          - paragraph [ref=e437]: 15.08.2024
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - generic [ref=e440]:
+              - generic [ref=e441]: АТ
+              - generic [ref=e442]:
+                - paragraph [ref=e443]: Алёна Тихонова
+                - paragraph [ref=e444]: Санкт-Петербург
+            - generic [ref=e445]: Google
+          - generic [ref=e446]:
+            - img [ref=e447]
+            - img [ref=e449]
+            - img [ref=e451]
+            - img [ref=e453]
+            - img [ref=e455]
+            - generic [ref=e457]: couple
+          - paragraph [ref=e458]: Прекрасный отель! Останавливались с мужем в середине июня. Отдельная благодарность за чистоту. Постельное бельё, полотенца, всё в наилучшем виде.
+          - paragraph [ref=e459]: 22.07.2024
+        - generic [ref=e460]:
+          - generic [ref=e461]:
+            - generic [ref=e462]:
+              - generic [ref=e463]: ДП
+              - generic [ref=e464]:
+                - paragraph [ref=e465]: Денис Павлов
+                - paragraph [ref=e466]: Екатеринбург
+            - generic [ref=e467]: Сайт
+          - generic [ref=e468]:
+            - img [ref=e469]
+            - img [ref=e471]
+            - img [ref=e473]
+            - img [ref=e475]
+            - img [ref=e477]
+            - generic [ref=e479]: couple
+          - paragraph [ref=e480]: ПРЕКРАСНОЕ МЕСТО ДЛЯ ОТДЫХА И ХОРОШИЕ ХОЗЯЕВА КОТОРЫЕ ВСЕГДА РАДЫ ГОСТЯМ! ВСТРЕТЯТ РАЗМЕСТЯТ И НАКОРМЯТ! ТОП ЗА СВОИ ДЕНЬГИ!
+          - paragraph [ref=e481]: 03.08.2024
+        - generic [ref=e482]:
+          - generic [ref=e483]:
+            - generic [ref=e484]:
+              - generic [ref=e485]: ИК
+              - generic [ref=e486]:
+                - paragraph [ref=e487]: Ирина Ковалёва
+                - paragraph [ref=e488]: Казань
+            - generic [ref=e489]: Booking.com
+          - generic [ref=e490]:
+            - img [ref=e491]
+            - img [ref=e493]
+            - img [ref=e495]
+            - img [ref=e497]
+            - img [ref=e499]
+            - generic [ref=e501]: family
+          - paragraph [ref=e502]: Мы в восторге от отдыха в этом Гостевом доме! Дети не хотели уезжать. Двор, качели, мангал — всё для семейного отдыха.
+          - paragraph [ref=e503]: 10.07.2024
+        - generic [ref=e504]:
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - generic [ref=e507]: ВК
+              - generic [ref=e508]:
+                - paragraph [ref=e509]: Виктор Калинников
+                - paragraph [ref=e510]: Новосибирск
+            - generic [ref=e511]: Google
+          - generic [ref=e512]:
+            - img [ref=e513]
+            - img [ref=e515]
+            - img [ref=e517]
+            - img [ref=e519]
+            - img [ref=e521]
+            - generic [ref=e523]: solo
+          - paragraph [ref=e524]: Очень классное местечко, советую посетить данный мини отель, частенько комфортно, обязательно ещё раз посетим вас, спасибо за чистоту комфорт!
+          - paragraph [ref=e525]: 28.06.2024
+        - generic [ref=e526]:
+          - generic [ref=e527]:
+            - generic [ref=e528]:
+              - generic [ref=e529]: МС
+              - generic [ref=e530]:
+                - paragraph [ref=e531]: Мария Соколова
+                - paragraph [ref=e532]: Ростов-на-Дону
+            - generic [ref=e533]: Booking.com
+          - generic [ref=e534]:
+            - img [ref=e535]
+            - img [ref=e537]
+            - img [ref=e539]
+            - img [ref=e541]
+            - img [ref=e543]
+            - generic [ref=e545]: couple
+          - paragraph [ref=e546]: Атмосфера домашнего уюта, внимательные хозяева, вкусные завтраки. До моря реально 10 минут пешком.
+          - paragraph [ref=e547]: 20.08.2024
+        - generic [ref=e548]:
+          - generic [ref=e549]:
+            - generic [ref=e550]:
+              - generic [ref=e551]: АП
+              - generic [ref=e552]:
+                - paragraph [ref=e553]: Александр Петров
+                - paragraph [ref=e554]: Воронеж
+            - generic [ref=e555]: Сайт
+          - generic [ref=e556]:
+            - img [ref=e557]
+            - img [ref=e559]
+            - img [ref=e561]
+            - img [ref=e563]
+            - img [ref=e565]
+            - generic [ref=e567]: family
+          - paragraph [ref=e568]: Отличный вариант для семьи с двумя детьми. Просторный номер, детская площадка во дворе, тихий район.
+          - paragraph [ref=e569]: 05.07.2024
+        - generic [ref=e570]:
+          - generic [ref=e571]:
+            - generic [ref=e572]:
+              - generic [ref=e573]: ЕВ
+              - generic [ref=e574]:
+                - paragraph [ref=e575]: Елена Васильева
+                - paragraph [ref=e576]: Самара
+            - generic [ref=e577]: Google
+          - generic [ref=e578]:
+            - img [ref=e579]
+            - img [ref=e581]
+            - img [ref=e583]
+            - img [ref=e585]
+            - img [ref=e587]
+            - generic [ref=e589]: solo
+          - paragraph [ref=e590]: Приезжала одна на неделю отдохнуть. Замечательный персонал, помогли со всеми вопросами. Чувствовала себя как дома.
+          - paragraph [ref=e591]: 12.08.2024
+        - generic [ref=e592]:
+          - generic [ref=e593]:
+            - generic [ref=e594]:
+              - generic [ref=e595]: ОМ
+              - generic [ref=e596]:
+                - paragraph [ref=e597]: Ольга Морозова
+                - paragraph [ref=e598]: Уфа
+            - generic [ref=e599]: Booking.com
+          - generic [ref=e600]:
+            - img [ref=e601]
+            - img [ref=e603]
+            - img [ref=e605]
+            - img [ref=e607]
+            - img [ref=e609]
+            - generic [ref=e611]: couple
+          - paragraph [ref=e612]: Романтичное место! Вечерами сидели на террасе, пили вино. Хозяева очень гостеприимные.
+          - paragraph [ref=e613]: 30.07.2024
+        - generic [ref=e614]:
+          - generic [ref=e615]:
+            - generic [ref=e616]:
+              - generic [ref=e617]: СН
+              - generic [ref=e618]:
+                - paragraph [ref=e619]: Сергей Николаев
+                - paragraph [ref=e620]: Челябинск
+            - generic [ref=e621]: Сайт
+          - generic [ref=e622]:
+            - img [ref=e623]
+            - img [ref=e625]
+            - img [ref=e627]
+            - img [ref=e629]
+            - img [ref=e631]
+            - generic [ref=e633]: family
+          - paragraph [ref=e634]: Третий раз останавливаемся у Маруси. Как приехали к родственникам. Всё чисто, уютно, по-домашнему.
+          - paragraph [ref=e635]: 08.08.2024
+        - generic [ref=e636]:
+          - generic [ref=e637]:
+            - generic [ref=e638]:
+              - generic [ref=e639]: ТИ
+              - generic [ref=e640]:
+                - paragraph [ref=e641]: Татьяна Иванова
+                - paragraph [ref=e642]: Пермь
+            - generic [ref=e643]: Google
+          - generic [ref=e644]:
+            - img [ref=e645]
+            - img [ref=e647]
+            - img [ref=e649]
+            - img [ref=e651]
+            - img [ref=e653]
+            - generic [ref=e655]: couple
+          - paragraph [ref=e656]: Хорошее соотношение цена-качество. Всё соответствует описанию. Рекомендуем!
+          - paragraph [ref=e657]: 15.06.2024
+        - generic [ref=e658]:
+          - generic [ref=e659]:
+            - generic [ref=e660]:
+              - generic [ref=e661]: АС
+              - generic [ref=e662]:
+                - paragraph [ref=e663]: Анна Смирнова
+                - paragraph [ref=e664]: Краснодар
+            - generic [ref=e665]: Booking.com
+          - generic [ref=e666]:
+            - img [ref=e667]
+            - img [ref=e669]
+            - img [ref=e671]
+            - img [ref=e673]
+            - img [ref=e675]
+            - generic [ref=e677]: family
+          - paragraph [ref=e678]: Жили в двухкомнатном номере. Очень просторно и светло. Дети были в восторге от двора!
+          - paragraph [ref=e679]: 18.07.2024
+    - generic [ref=e681]:
+      - generic [ref=e682]:
+        - heading "Как нас найти" [level=2] [ref=e683]
+        - paragraph [ref=e684]: Тихий уголок Кудепсты, в 10 минутах от моря
+      - generic [ref=e685]:
+        - generic [ref=e686]:
+          - iframe [ref=e688]
+          - generic [ref=e689]:
+            - generic [ref=e690]:
+              - img [ref=e691]
+              - paragraph [ref=e694]: 800 м
+              - paragraph [ref=e695]: Пляж Кудепста
+              - paragraph [ref=e696]: 10 мин пешком
+            - generic [ref=e697]:
+              - img [ref=e698]
+              - paragraph [ref=e701]: 1.2 км
+              - paragraph [ref=e702]: Ж/д Кудепста
+              - paragraph [ref=e703]: 15 мин пешком
+            - generic [ref=e704]:
+              - img [ref=e705]
+              - paragraph [ref=e709]: 8 км
+              - paragraph [ref=e710]: Аэропорт Адлер
+              - paragraph [ref=e711]: 15 мин на машине
+            - generic [ref=e712]:
+              - img [ref=e713]
+              - paragraph [ref=e717]: 18 км
+              - paragraph [ref=e718]: Олимпийский парк
+              - paragraph [ref=e719]: 25 мин на машине
+        - generic [ref=e720]:
+          - generic [ref=e721]:
+            - generic [ref=e722]:
+              - img [ref=e724]
+              - generic [ref=e727]:
+                - heading "Адрес" [level=3] [ref=e728]
+                - paragraph [ref=e729]: Кудепста, ул. Садовая 15, Сочи
+            - button "Построить маршрут" [ref=e730] [cursor=pointer]:
+              - img [ref=e731]
+              - text: Построить маршрут
+          - generic [ref=e735]:
+            - heading "Как добраться" [level=3] [ref=e736]
+            - generic [ref=e737]:
+              - button "На машине" [ref=e738] [cursor=pointer]:
+                - generic [ref=e739]: На машине
+                - img [ref=e740]
+              - paragraph [ref=e742]: С трассы М-27 поворот на Кудепсту. Проехать 800 м прямо, затем налево на ул. Садовую. Гостевой дом с правой стороны, ориентир — высокая сосна у ворот. Бесплатная парковка на территории.
+            - generic [ref=e743]:
+              - button "На поезде" [ref=e744] [cursor=pointer]:
+                - generic [ref=e745]: На поезде
+                - img [ref=e746]
+              - paragraph [ref=e748]: Электричкой до станции Кудепста (идёт от Адлера каждые 30 мин). От станции 15 минут пешком или 3 минуты на такси. Можем встретить на машине — позвоните за 15 минут.
+            - generic [ref=e749]:
+              - button "Из аэропорта" [ref=e750] [cursor=pointer]:
+                - generic [ref=e751]: Из аэропорта
+                - img [ref=e752]
+              - paragraph [ref=e754]: Такси от аэропорта Адлер — 15 минут (≈800₽). Или автобус № 125 до остановки «Кудепста», затем 10 минут пешком. Трансфер можно заказать у нас — стоимость 700₽.
+    - generic [ref=e757]:
+      - generic [ref=e758]:
+        - heading "Забронируйте свой отдых" [level=2] [ref=e759]
+        - paragraph [ref=e760]: Оставьте заявку — мы перезвоним в течение 15 минут
+        - generic [ref=e761]:
+          - link "Телефон +7 (962) 888-88-88" [ref=e762] [cursor=pointer]:
+            - /url: tel:+7 (962) 888-88-88
+            - img [ref=e764]
+            - generic [ref=e766]:
+              - paragraph [ref=e767]: Телефон
+              - paragraph [ref=e768]: +7 (962) 888-88-88
+          - link "Email hello@marusya-sochi.ru" [ref=e769] [cursor=pointer]:
+            - /url: mailto:hello@marusya-sochi.ru
+            - img [ref=e771]
+            - generic [ref=e774]:
+              - paragraph [ref=e775]: Email
+              - paragraph [ref=e776]: hello@marusya-sochi.ru
+          - generic [ref=e777]:
+            - img [ref=e779]
+            - generic [ref=e782]:
+              - paragraph [ref=e783]: Адрес
+              - paragraph [ref=e784]: Кудепста, ул. Садовая 15, Сочи
+          - generic [ref=e785]:
+            - img [ref=e787]
+            - generic [ref=e790]:
+              - paragraph [ref=e791]: Режим работы
+              - paragraph [ref=e792]: Круглосуточно
+      - generic [ref=e795]:
+        - generic [ref=e796]:
+          - button "Заезд Выбрать дату" [ref=e797] [cursor=pointer]:
+            - img [ref=e798]
+            - generic [ref=e800]:
+              - paragraph [ref=e801]: Заезд
+              - paragraph [ref=e802]: Выбрать дату
+          - button "Выезд Выбрать дату" [ref=e803] [cursor=pointer]:
+            - img [ref=e804]
+            - generic [ref=e806]:
+              - paragraph [ref=e807]: Выезд
+              - paragraph [ref=e808]: Выбрать дату
+        - generic [ref=e809]:
+          - img [ref=e810]
+          - combobox [ref=e815]:
+            - option "1 гость"
+            - option "2 гостя" [selected]
+            - option "3 гостя"
+            - option "4 гостя"
+        - button "Забронировать" [disabled] [ref=e816]
+  - contentinfo [ref=e817]:
+    - generic [ref=e818]:
+      - generic [ref=e819]:
+        - generic [ref=e820]:
+          - heading "Маруся" [level=3] [ref=e821]
+          - paragraph [ref=e822]: Семейный гостевой дом в Кудепсте. Уют, чистота и армянское гостеприимство.
+          - generic [ref=e823]:
+            - link "WhatsApp" [ref=e824] [cursor=pointer]:
+              - /url: https://wa.me/79628888888
+              - img [ref=e825]
+            - link "Telegram" [ref=e827] [cursor=pointer]:
+              - /url: https://t.me/marusya_sochi
+              - img [ref=e828]
+        - generic [ref=e830]:
+          - heading "Навигация" [level=4] [ref=e831]
+          - list [ref=e832]:
+            - listitem [ref=e833]:
+              - link "Номера" [ref=e834] [cursor=pointer]:
+                - /url: "#rooms"
+            - listitem [ref=e835]:
+              - link "Галерея" [ref=e836] [cursor=pointer]:
+                - /url: "#gallery"
+            - listitem [ref=e837]:
+              - link "Расположение" [ref=e838] [cursor=pointer]:
+                - /url: "#location"
+            - listitem [ref=e839]:
+              - link "Контакты" [ref=e840] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=e841]:
+              - link "Политика конфиденциальности" [ref=e842] [cursor=pointer]:
+                - /url: /privacy
+        - generic [ref=e843]:
+          - heading "Контакты" [level=4] [ref=e844]
+          - list [ref=e845]:
+            - listitem [ref=e846]:
+              - img [ref=e847]
+              - text: +7 (962) 888-88-88
+            - listitem [ref=e849]:
+              - img [ref=e850]
+              - text: hello@marusya-sochi.ru
+            - listitem [ref=e853]:
+              - img [ref=e854]
+              - text: Кудепста, ул. Садовая 15, Сочи
+      - generic [ref=e857]: © 2025 Гостевой дом Маруся. Все права защищены.
+  - generic [ref=e865]:
+    - generic [ref=e866]:
+      - generic [ref=e867]:
+        - img [ref=e868]
+        - generic [ref=e870]: Выберите даты
+      - button "Любой номер" [ref=e872] [cursor=pointer]:
+        - text: Любой номер
+        - img [ref=e873]
+    - generic [ref=e875]:
+      - button "Забронировать" [ref=e876] [cursor=pointer]:
+        - img [ref=e877]
+        - text: Забронировать
+      - button "Закрыть" [ref=e879] [cursor=pointer]:
+        - img [ref=e880]
+  - button "Открыть WhatsApp" [ref=e860] [cursor=pointer]:
+    - img [ref=e861]

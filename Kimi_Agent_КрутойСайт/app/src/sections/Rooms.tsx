@@ -34,7 +34,7 @@ function RoomCard({ room, index }: { room: typeof roomsCopy.rooms[0]; index: num
       initial={{ opacity: 0, x: isEven ? -60 : 60 }}
       animate={isInView ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="grid min-h-[600px] lg:grid-cols-[60%_40%]"
+      className="grid min-h-[500px] lg:grid-cols-[45%_55%]"
     >
       {/* Image */}
       <div className={`relative overflow-hidden ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
@@ -71,13 +71,13 @@ function RoomCard({ room, index }: { room: typeof roomsCopy.rooms[0]; index: num
       </div>
 
       {/* Content */}
-      <div className={`flex flex-col justify-center bg-cream p-8 lg:p-16 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+      <div className={`flex flex-col justify-center bg-cream p-6 lg:p-12 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="mb-4 flex items-center gap-4 text-sm text-warm-gray">
+          <div className="mb-4 flex items-center gap-4 text-base text-warm-gray">
             <span className="flex items-center gap-1">
               <Maximize className="h-4 w-4" />
               {room.size} м²
@@ -88,15 +88,15 @@ function RoomCard({ room, index }: { room: typeof roomsCopy.rooms[0]; index: num
             </span>
           </div>
 
-          <h3 className="font-display mb-4 text-3xl text-charcoal lg:text-4xl">{room.name}</h3>
-          <p className="mb-6 text-warm-gray">{room.description}</p>
+          <h3 className="font-display mb-4 text-4xl text-charcoal lg:text-5xl">{room.name}</h3>
+          <p className="mb-6 text-lg text-warm-gray leading-relaxed">{room.description}</p>
 
           {/* Amenities */}
           <div className="mb-8 grid grid-cols-2 gap-3">
             {room.amenities.slice(0, 6).map((amenity) => {
               const Icon = amenityIcons[amenity] || Check;
               return (
-                <div key={amenity} className="flex items-center gap-2 text-sm text-charcoal">
+                <div key={amenity} className="flex items-center gap-2 text-base text-charcoal">
                   <Icon className="h-4 w-4 text-sand" />
                   {amenity}
                 </div>
@@ -107,15 +107,15 @@ function RoomCard({ room, index }: { room: typeof roomsCopy.rooms[0]; index: num
           {/* Price & CTA */}
           <div className="flex items-end justify-between">
             <div>
-              <p className="text-sm text-warm-gray">от</p>
-              <p className="font-display text-3xl text-charcoal">{room.price.toLocaleString()}₽</p>
-              <p className="text-sm text-warm-gray">за ночь</p>
+              <p className="text-base text-warm-gray">от</p>
+              <p className="font-display text-4xl text-charcoal">{room.price.toLocaleString()}₽</p>
+              <p className="text-base text-warm-gray">за ночь</p>
             </div>
             <button
               onClick={openWhatsApp}
-              className="flex items-center gap-2 rounded-full bg-sand px-8 py-4 font-medium text-charcoal transition-all hover:scale-105 hover:shadow-lg"
+              className="flex items-center gap-2 rounded-full bg-sand px-10 py-5 text-lg font-medium text-charcoal transition-all hover:scale-105 hover:shadow-lg"
             >
-              <Calendar className="h-4 w-4" />
+              <Calendar className="h-5 w-5" />
               Забронировать
             </button>
           </div>

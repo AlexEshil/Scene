@@ -3,18 +3,9 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useInView } from '@/hooks';
+import { galleryCopy } from '@/content/copy';
 
-const galleryImages = [
-  { src: '/gallery-1.jpg', alt: 'Двор гостевого дома' },
-  { src: '/gallery-2.jpg', alt: 'Номер стандарт' },
-  { src: '/gallery-3.jpg', alt: 'Общая кухня' },
-  { src: '/gallery-4.jpg', alt: 'Территория' },
-  { src: '/gallery-5.jpg', alt: 'Ванная комната' },
-  { src: '/gallery-6.jpg', alt: 'Завтрак' },
-  { src: '/gallery-7.jpg', alt: 'Мангальная зона' },
-  { src: '/gallery-8.jpg', alt: 'Детская площадка' },
-  { src: '/gallery-9.jpg', alt: 'Вид на горы' },
-];
+const galleryImages = galleryCopy.images;
 
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
