@@ -34,7 +34,7 @@ const unsplash = {
   // Story moments - generic scenes (we don't have these photos from guesthouse)
   sunrise: 'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80',
   breakfast: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200&q=80',
-  beach: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80',
+  beach: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80',
   lunch: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80',
   sunset: 'https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=1200&q=80',
 };
