@@ -26,17 +26,17 @@ const localPhotos = {
   ],
 };
 
-// Unsplash only for scenes we don't have real photos of
+// External CDN photos for scenes without local photos
 const unsplash = {
   // Hero - local photo (always loads)
   heroPoster: '/hero-sunset.jpg',
 
-  // Story moments - picsum.photos (reliable CDN, works everywhere)
-  sunrise: 'https://picsum.photos/id/1069/1200/800',
-  breakfast: 'https://picsum.photos/id/292/1200/800',
-  beach: 'https://picsum.photos/id/325/1200/800',
-  lunch: 'https://picsum.photos/id/431/1200/800',
-  sunset: 'https://picsum.photos/id/15/1200/800',
+  // Story moments
+  sunrise: 'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80',
+  breakfast: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200&q=80',
+  beach: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&q=80',
+  lunch: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80',
+  sunset: '/hero-sunset.jpg',
 };
 
 export const siteConfig = {
