@@ -31,11 +31,11 @@ const unsplash = {
   // Hero - local photo (always loads)
   heroPoster: '/hero-sunset.jpg',
 
-  // Story moments
-  sunrise: 'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80',
-  breakfast: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200&q=80',
-  beach: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&q=80',
-  lunch: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80',
+  // Story moments - local files (no CDN dependency)
+  sunrise: '/story-sunrise.jpg',
+  breakfast: '/story-breakfast.jpg',
+  beach: '/story-beach.jpg',
+  lunch: '/story-lunch.jpg',
   sunset: '/hero-sunset.jpg',
 };
 
